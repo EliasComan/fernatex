@@ -13,7 +13,7 @@ const Home = () => {
         <h1 className="text-3xl  text-black font-semibold"> Somos Fernatex.</h1>
         <div className="bg-primary/80 shadow-2xl shadow-secondary/50 w-48 h-0.5 mt-2"></div>
     </div>
-      <div className="flex mt-24  justify-between px-12 items-center  w-full my-48 ">
+      <div className="flex mt-24  justify-between px-12 items-center  w-5/6 my-48 ">
       <Link  to={'/Nosotros'} layout className="card w-96 h-96 shadow-lg shadow-primary/20">
         <div className='flex flex-col items-center justify-center h-4/6' >
             <h1 className='text-4xl'>Nosotros</h1>

@@ -14,10 +14,10 @@ const Navbar = () => {
   </div>
   <div className="flex-none">
     <ul className="menu menu-horizontal p-0">
-      <motion.li whileHover={{scale:1.1}} to={'/'} className='text-black'><Link>Inicio</Link></motion.li>
-      <motion.li whileHover={{scale:1.1}} to={'/nosotros'} className='text-black'><Link>Nosotros</Link></motion.li>
-      <motion.li whileHover={{scale:1.1}} to={'/estampados'} className='text-black'><Link>Estampados</Link></motion.li>
-      <motion.li whileHover={{scale:1.1}} to={'/contacto'} className='text-black'><Link>Contacto</Link></motion.li>
+      <motion.li whileHover={{scale:1.1}}  className='text-black'><Link to={'/'}>Inicio</Link></motion.li>
+      <motion.li whileHover={{scale:1.1}}  className='text-black'><Link to={'/nosotros'}>Nosotros</Link></motion.li>
+      <motion.li whileHover={{scale:1.1}}  className='text-black'><Link to={'/estampados'}>Estampados</Link></motion.li>
+      <motion.li whileHover={{scale:1.1}}  className='text-black'><Link to={'/contacto'}>Contacto</Link></motion.li>
     </ul>
   </div>
 </div>

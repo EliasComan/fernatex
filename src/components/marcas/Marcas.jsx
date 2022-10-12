@@ -3,8 +3,8 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 const Marcas = () => {
-const render = MarcasData.map(item => (
-    <motion.div className='flex flex-col items-center justify-center'>
+const render = MarcasData.map((item, index )=> (
+    <motion.div key={item.nombre+index} className='flex flex-col items-center justify-center'>
         <motion.img src={item.imagen} className='w-20 rounded-full' ></motion.img>
         {item.nombre}
     </motion.div>

@@ -58,7 +58,6 @@ export { default as Svg1144601 } from "./1144601";
 export { default as Svg1144901 } from "./1144901";
 export { default as Svg1102801 } from "./1102801";
 export { default as Svg1103701 } from "./1103701";
-export { default as Svg1105401 } from "./1105401";
 export { default as Svg1107301 } from "./1107301";
 export { default as Svg1108001 } from "./1108001";
 export { default as Svg1108901 } from "./1108901";

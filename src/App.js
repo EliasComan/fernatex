@@ -2,6 +2,7 @@
 
 import { Route, Routes } from "react-router-dom";
 
+import Estampados from "./components/estampados";
 import Footer from "./components/footer/Footer";
 import Home from "./components/home/Home";
 import Navbar from "./components/navbar/Navbar";
@@ -19,6 +20,7 @@ function App() {
           <Route  path="/" element={<Home/>}/>
           <Route path="/images" element={<Images/>}/>
           <Route path='/nosotros' element ={<Nosotros/>}/>
+          <Route path='/estampados' element={<Estampados/>}/>
         </Routes>
         <Footer/>
     </div>

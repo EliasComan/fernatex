@@ -1,9 +1,7 @@
 import './styles.css'
 
 import Carousel from "../carrousel/Carrousel";
-import Estampados from '../estampados';
 import { Link } from 'react-router-dom';
-import {ReactComponent as Logo} from '../../images/logo/logo remera fernatex-01.svg'
 import Marcas from '../marcas/Marcas';
 import React, {  } from "react";
 
@@ -45,14 +43,7 @@ const Home = () => {
         </Link>
       </div>
       <Marcas/>
-      <Estampados/>
-      <Logo
-        fill='#AADDAA'
-        stroke='black'
-        
-        
-        className='w-48 bg-red-600 '
-      />
+     
     </div>
   );
 };

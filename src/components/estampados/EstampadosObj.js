@@ -5,7 +5,6 @@ export const  estampadosSvg = [
     { svg: require( "./10.964 langostinos-01.svg").default, nombre:'10964Langostinos01' },
     { svg: require("./10.966-01.svg").default, nombre:"1096601" },
     { svg: require("./10.967-01.svg").default , nombre:"1096701"},
-    { svg: require("./10.972-01.svg").default , nombre:"1097201"},
     { svg: require("./11.002-01.svg").default , nombre:"1100201"},
     { svg: require("./11.020-01.svg").default , nombre:"1102001"},
     { svg: require("./11.035-01.svg").default , nombre:"1103501"},

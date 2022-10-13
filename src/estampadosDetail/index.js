@@ -1,7 +1,6 @@
 import React, { Suspense, useEffect, useState } from 'react'
 
 import { Orbit } from '@uiball/loaders'
-import {isDragActive} from 'framer-motion';
 import {useParams} from 'react-router-dom';
 
 const EstampadosDetail = () => {
@@ -48,10 +47,10 @@ const EstampadosDetail = () => {
 
 
   return (
-    <div>{LogoImport && (
+    <div className='flex justify-around'>{LogoImport && (
         <Suspense fallback={<Orbit size={35} color="#231F20" />}>
           <LogoImport
-            className={`w-96 ${BgColor}`}
+            className={`h-screen ${BgColor}`}
             stroke={color}
             fill={fill}
           />
@@ -66,7 +65,7 @@ const EstampadosDetail = () => {
           {
             bgColors.map((i,index) =>{
               console.log(index)
-              return<div key={index} onClick={()=>handleBgColor(i)} className={`w-12 h-12 ${i} grid`}></div>})
+              return<div key={index} onClick={()=>handleBgColor(i)} className={`w-8 h-8 ${i} grid`}></div>})
               
                
               }
@@ -78,7 +77,7 @@ const EstampadosDetail = () => {
                 <div className='grid grid-cols-10 w-96'>
 
                 { fillStrokeColors.map((i,index) =>{
-                  return<div key={index} onClick={()=>handleFillColor(i)} style={{backgroundColor:i}} className={`w-12 h-12  grid`}></div>})
+                  return<div key={index} onClick={()=>handleFillColor(i)} style={{backgroundColor:i}} className={`w-8 h-8  grid`}></div>})
                 }
                 </div>
               </div>
@@ -89,7 +88,7 @@ const EstampadosDetail = () => {
                 <div className='grid grid-cols-10 w-96'>
 
                 { fillStrokeColors.map((i,index) =>{
-                  return<div key={index} onClick={()=>handleStrokeColor(i)} style={{backgroundColor:i}} className={`w-12 h-12  grid`}></div>})
+                  return<div key={index} onClick={()=>handleStrokeColor(i)} style={{backgroundColor:i}} className={`w-8 h-8  grid`}></div>})
                 }
                 </div>
               </div>

@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { estampadosSvg } from "./EstampadosObj";
 import { motion } from "framer-motion";
@@ -7,27 +7,13 @@ import {useNavigate} from 'react-router-dom';
 const Estampados = () => {
   const navigate = useNavigate()
   const [data, setData] = useState("");
-  const [color, setColor] = useState("#0F0211");
-  const [bgColor, setBgColor] = useState();
-  const [LogoImport, setlogoImort] = useState();
-  const [fill, setFill] = useState();
   const [currentPage, setCurrentPage] = useState(1);
   const postperPage = 12;
   const lastPostIndex = currentPage * postperPage;
   const firstPostIndex = lastPostIndex - postperPage;
 
-  const handleBgColor = () => {
-    setColor("#D41C63");
-    setFill("#AADDAA");
-    setBgColor("bg-yellow-600");
-  };
-  const handleImport = (e, nombre) => {
-   /* const importDinamico = React.lazy(
-      async () => await import(`./dist/${nombre}`)
-    );
-    setlogoImort(importDinamico);
-  */
- navigate(`/estampados/${nombre}`)
+  const handleImport = ( e,nombre) => {
+    navigate(`/estampados/${nombre}`)
     
   };
   useEffect(() => {
@@ -50,7 +36,7 @@ const Estampados = () => {
       );
     });
     setData(estampados);
-  }, [currentPage, postperPage, lastPostIndex, firstPostIndex]);
+  }, [currentPage, postperPage, lastPostIndex, firstPostIndex,]);
 
   const onHandlePage = (pageCase) => {
     pageCase === "Siguiente"
@@ -67,9 +53,6 @@ const Estampados = () => {
 
       {data}
       </div>
-      <button className="btn " onClick={() => handleBgColor()}>
-        handlebackground
-      </button>
 
       <div></div>
 
@@ -83,15 +66,7 @@ const Estampados = () => {
         </button>
       </div>
 
-      {LogoImport && (
-        <Suspense fallback={<div>Loading...</div>}>
-          <LogoImport
-            className={`w-96 ${bgColor}`}
-            stroke={color}
-            fill={fill}
-          />
-        </Suspense>
-      )}
+   
     </div>
   );
 };

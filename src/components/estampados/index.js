@@ -16,10 +16,13 @@ const Estampados = () => {
     navigate(`/estampados/${nombre}`)
     
   };
+  
   useEffect(() => {
     const estampadosSlice = estampadosSvg.slice(firstPostIndex, lastPostIndex);
     const estampados = estampadosSlice.map((item, index) => {
       return (
+        <div className="mx-4">
+
         <motion.img
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -29,10 +32,11 @@ const Estampados = () => {
           id={index + "svg"}
           key={item.svg + "data" + index}
           onClick={(e) => handleImport(e, item.nombre)}
-          className="w-96"
+          className="w-96 grid my-12  border-xl shadow-md"
           src={item.svg}
           alt="svg"
-        />
+          />
+          </div>
       );
     });
     setData(estampados);
@@ -49,19 +53,19 @@ const Estampados = () => {
   };
   return (
     <div>
-      <div className="h-auto">
+      <div className=" grid grid-cols-4 py-12 mx-12">
 
       {data}
       </div>
 
       <div></div>
 
-      <div className="btn-group">
-        <button className="btn" onClick={() => onHandlePage("Anterior")}>
+      <div className="btn-group flex items-center justify-center my-20">
+        <button className="btn btn-primary" onClick={() => onHandlePage("Anterior")}>
           «
         </button>
-        <button className="btn">Page {currentPage}</button>
-        <button className="btn" onClick={() => onHandlePage("Siguiente")}>
+        <button className="btn btn-primary">Pagina {currentPage}</button>
+        <button className="btn btn-primary" onClick={() => onHandlePage("Siguiente")}>
           »
         </button>
       </div>

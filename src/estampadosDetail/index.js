@@ -1,5 +1,6 @@
 import React, { Suspense, useEffect, useState } from 'react'
 
+import { Orbit } from '@uiball/loaders'
 import {useParams} from 'react-router-dom';
 
 const EstampadosDetail = () => {
@@ -25,7 +26,7 @@ const EstampadosDetail = () => {
 
   return (
     <div>{LogoImport && (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Orbit size={35} color="#231F20" />}>
           <LogoImport
             className={`w-96 ${BgColor}`}
             stroke={color}

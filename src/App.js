@@ -1,8 +1,7 @@
- // You can also use <link> for styles
-
 import { Route, Routes } from "react-router-dom";
 
 import Estampados from "./components/estampados";
+import EstampadosDetail from "./estampadosDetail";
 import Footer from "./components/footer/Footer";
 import Home from "./components/home/Home";
 import Navbar from "./components/navbar/Navbar";
@@ -21,6 +20,7 @@ function App() {
           <Route path="/images" element={<Images/>}/>
           <Route path='/nosotros' element ={<Nosotros/>}/>
           <Route path='/estampados' element={<Estampados/>}/>
+          <Route path='/estampados/:name' element={<EstampadosDetail/>}/>
         </Routes>
         <Footer/>
     </div>

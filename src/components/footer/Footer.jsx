@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center p-10 bg-primary text-primary-content">
+    <motion.footer  layout className="footer footer-center p-10 bg-primary text-primary-content">
       <div>
         <svg
           width="50"
@@ -58,7 +59,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 

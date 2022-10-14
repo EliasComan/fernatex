@@ -15,7 +15,6 @@ const EstampadosDetail = () => {
   const [BgColor, setBgColor] = useState();
   const [dataFromSvg, setDataFromSvg] = useState()
   const bgColors = [
-    "bg-black",
     "bg-white",
     "bg-gray-200",
     "bg-gray-300",
@@ -25,6 +24,7 @@ const EstampadosDetail = () => {
     "bg-gray-700",
     "bg-gray-800",
     "bg-gray-900",
+    "bg-black",
     "bg-red-50",
     "bg-red-100",
     "bg-red-200",

@@ -31,7 +31,6 @@ export { default as Svg1137401 } from "./1137401";
 export { default as Svg11385LetrasChinas01 } from "./11385LetrasChinas01";
 export { default as Svg11386MotivosOrientales01 } from "./11386MotivosOrientales01";
 export { default as Svg11391SolesYLunas01 } from "./11391SolesYLunas01";
-export { default as Svg11394LetrasGóticas01 } from "./11394LetrasGóticas01";
 export { default as Svg1140001 } from "./1140001";
 export { default as Svg11412Cebra01 } from "./11412Cebra01";
 export { default as Svg11417HawaiiNeneMesaDeTrabajo1 } from "./11417HawaiiNeneMesaDeTrabajo1";

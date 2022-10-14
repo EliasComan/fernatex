@@ -13,6 +13,7 @@ const Estampados = () => {
   const firstPostIndex = lastPostIndex - postperPage;
 
   const handleImport = ( e,nombre) => {
+    
     navigate(`/estampados/${nombre}`)
     
   };

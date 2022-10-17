@@ -181,7 +181,7 @@ const EstampadosDetail = () => {
   const getrandomNumber = () => {
     const numbersGenerated = [];
     const dataRandmon = []
-    for (let index = 0; numbersGenerated.length <= 10; index++) {
+    for (let index = 0; numbersGenerated.length <= 5; index++) {
       const randomNumber = Math.random() * 100;
       const randomFloor = Math.floor(randomNumber);
       numbersGenerated.push(randomFloor);

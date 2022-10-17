@@ -18,7 +18,6 @@ export const  estampadosSvg = [
     { svg: require("./11.126 surf.svg").default , nombre:"11126Surf"},
     { svg: require("./11.191-01.svg").default , nombre:"1119101"},
     { svg: require("./11.199-01.svg").default , nombre:"1119901"},
-    { svg: require("./11.321Lazy-01.svg").default , nombre:"11321Lazy01"},
     { svg: require("./11.323 ondas-01.svg").default , nombre:"11323Ondas01"},
     { svg: require("./11.326 Hanna-01.svg").default , nombre:"11326Hanna01"},
     { svg: require("./11.335 Mariposas  nuevo-01.svg").default , nombre:"11335MariposasNuevo01"},

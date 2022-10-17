@@ -15,7 +15,6 @@ export { default as Svg11105Robot01 } from "./11105Robot01";
 export { default as Svg11126Surf } from "./11126Surf";
 export { default as Svg1119101 } from "./1119101";
 export { default as Svg1119901 } from "./1119901";
-export { default as Svg11321Lazy01 } from "./11321Lazy01";
 export { default as Svg11323Ondas01 } from "./11323Ondas01";
 export { default as Svg11326Hanna01 } from "./11326Hanna01";
 export { default as Svg11335MariposasNuevo01 } from "./11335MariposasNuevo01";

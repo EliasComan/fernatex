@@ -1,24 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 
 import { estampadosSvg } from "./EstampadosObj";
 import { motion } from "framer-motion";
 import {useNavigate} from 'react-router-dom';
 
 const Estampados = () => {
-  const navigate = useNavigate()
   const [data, setData] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const postperPage = 12;
   const lastPostIndex = currentPage * postperPage;
   const firstPostIndex = lastPostIndex - postperPage;
-
-  const handleImport = ( e,nombre) => {
-    
-    navigate(`/estampados/${nombre}`)
-    
-  };
+  
+  const navigate = useNavigate()
   
   useEffect(() => {
+    const handleImport = ( e,nombre) => {
+      
+      navigate(`/estampados/${nombre}`)
+      
+    };
     const estampadosSlice = estampadosSvg.slice(firstPostIndex, lastPostIndex);
     const estampados = estampadosSlice.map((item, index) => {
       return (
@@ -27,10 +27,11 @@ const Estampados = () => {
         <motion.img
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 1.2 }}
           viewport={{ once: true }}
-          layout
+          exit={{opacity:0}}
           id={index + "svg"}
+          layout
           key={item.svg + "data" + index}
           onClick={(e) => handleImport(e, item.nombre)}
           className="w-96 grid my-12  border-xl shadow-md"
@@ -41,7 +42,7 @@ const Estampados = () => {
       );
     });
     setData(estampados);
-  }, [currentPage, postperPage, lastPostIndex, firstPostIndex,]);
+  }, [currentPage, postperPage, lastPostIndex, firstPostIndex,navigate]);
 
   const onHandlePage = (pageCase) => {
     pageCase === "Siguiente"
@@ -54,10 +55,16 @@ const Estampados = () => {
   };
   return (
     <div>
-      <div className=" grid grid-cols-4 py-12 mx-12">
+      <Suspense fallback={<div>Cargando</div>}>
+
+      <motion.div   layout
+  transition={{
+    layout: { duration: 0.1  }
+  }} className=" grid grid-cols-4 py-12 mx-12">
 
       {data}
-      </div>
+      </motion.div>
+      </Suspense>
 
       <div></div>
 

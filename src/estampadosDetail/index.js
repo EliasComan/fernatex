@@ -181,8 +181,8 @@ const EstampadosDetail = () => {
   const getrandomNumber = () => {
     const numbersGenerated = [];
     const dataRandmon = []
-    for (let index = 0; numbersGenerated.length <= 5; index++) {
-      const randomNumber = Math.random() * 100;
+    for (let index = 0; numbersGenerated.length <= 10; index++) {
+      const randomNumber = Math.random() * 100 -2;
       const randomFloor = Math.floor(randomNumber);
       numbersGenerated.push(randomFloor);
       dataRandmon.push(estampadosSvg.at(randomFloor));
@@ -215,7 +215,7 @@ const EstampadosDetail = () => {
     <div>
       <div className="flex justify-around">
         {LogoImport && (
-          <Suspense fallback={<Orbit size={35} color="#231F20" />}>
+          <Suspense fallback={<div className="h-screen flex items-center justify-center"><Orbit size={35} color="#231F20" /></div>}>
             <LogoImport
               className={`h-screen ${BgColor}`}
               stroke={color}
@@ -232,7 +232,7 @@ const EstampadosDetail = () => {
             {bgColors.map((i, index) => {
               return (
                 <div
-                  key={index}
+                  key={i+index+'bg'}
                   onClick={() => handleBgColor(i)}
                   className={`w-8 h-8 ${i} grid`}
                 ></div>
@@ -247,7 +247,7 @@ const EstampadosDetail = () => {
               {fillStrokeColors.map((i, index) => {
                 return (
                   <div
-                    key={index}
+                    key={ i+index+'stroke'}
                     onClick={() => handleFillColor(i)}
                     style={{ backgroundColor: i }}
                     className={`w-8 h-8  grid`}
@@ -264,7 +264,7 @@ const EstampadosDetail = () => {
               {fillStrokeColors.map((i, index) => {
                 return (
                   <div
-                    key={index}
+                    key={i+index+'strokecolor'}
                     onClick={() => handleStrokeColor(i)}
                     style={{ backgroundColor: i }}
                     className={`w-8 h-8  grid`}
@@ -275,26 +275,29 @@ const EstampadosDetail = () => {
           </div>
         </div>
       </div>
-      <div
-        className="flex
-    "
-      >
-        { dataFromSvg &&
-          dataFromSvg.map((i,index) => {
-            return  <motion.img
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1 }}
-              viewport={{ once: true }}
-              layout
-              key={i.svg + "data" + index}
-              className="w-96 grid my-12  border-xl shadow-md"
-              src={i.svg}
-              alt="svg"
-              onClick={(e) =>handleNavigate(e,i.nombre)}
-            />
-        })}
-      </div>
+      <section>
+          <div
+            className="flex  gap-5 my-12 snap-mandatory overflow-x-auto max-w-screen p-4 mx-4
+        "
+          >
+            { dataFromSvg &&
+              dataFromSvg.map((i,index) => {
+                return <div className="shrink-0 rounded w-2/5  shadow-lg snap-center ">
+                <motion.img
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: true }}
+                key={i.svg + "/data/" + index}
+                className=" aspect-video object-cover border-xl shadow-md rounded-lg"
+                src={i.svg}
+                alt="svg"
+                onClick={(e) =>handleNavigate(e,i.nombre)}
+                />
+                </div> 
+            })}
+          </div>
+      </section>
     </div>
   );
 };

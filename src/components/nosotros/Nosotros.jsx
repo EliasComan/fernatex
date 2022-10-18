@@ -51,7 +51,7 @@ const Nosotros = () => {
                         </p>
                 </div>
                 <div className=' mt-20'>
-                    <motion.img layout initial={{opacity:0}}whileInView={{opacity:1}} transition={{duration:2}} viewport={{once:true}} className='w-96 h-auto' src="https://www.textilibera.com.ar/wp-content/uploads/2020/09/historia2-scaled.jpg" alt="" />
+                    <motion.img layout initial={{opacity:0}}whileInView={{opacity:1}} transition={{duration:2}} viewport={{once:true}} className='w-96 h-auto' src={"https://www.textilibera.com.ar/wp-content/uploads/2020/09/historia2-scaled.jpg"} alt="" />
                     <motion.img layout initial={{opacity:0}}whileInView={{opacity:1}} transition={{duration:2}} viewport={{once:true}} className='w-96   h-auto mt-4' src='https://www.textilibera.com.ar/wp-content/uploads/2020/09/historia4.jpg' alt=''/>
 
                 </div>

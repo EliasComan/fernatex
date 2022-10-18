@@ -213,11 +213,11 @@ const EstampadosDetail = () => {
 
   return (
     <div>
-      <div className="flex justify-around">
+      <div className="flex justify-around my-12">
         {LogoImport && (
           <Suspense fallback={<div className="h-screen flex items-center justify-center"><Orbit size={35} color="#231F20" /></div>}>
             <LogoImport
-              className={`h-screen ${BgColor}`}
+              className={`h-screen border shadow-lg ${BgColor}`}
               stroke={color}
               fill={fill}
             />
@@ -225,10 +225,10 @@ const EstampadosDetail = () => {
         )}
         <div className="">
           <div>
-            <h2 className="text-3xl text-black">Color de fondo</h2>
+            <h2 className="text-3xl my-2 text-black">Color de fondo</h2>
           </div>
 
-          <div className="grid grid-cols-10 w-96">
+          <div className="grid grid-cols-10 ">
             {bgColors.map((i, index) => {
               return (
                 <div
@@ -241,9 +241,9 @@ const EstampadosDetail = () => {
           </div>
           <div>
             <div>
-              <h2 className="text-3xl text-black">Color de relleno</h2>
+              <h2 className="text-3xl my-2 text-black">Color de relleno</h2>
             </div>
-            <div className="grid grid-cols-10 w-96">
+            <div className="grid grid-cols-10 ">
               {fillStrokeColors.map((i, index) => {
                 return (
                   <div
@@ -258,9 +258,9 @@ const EstampadosDetail = () => {
           </div>
           <div>
             <div>
-              <h2 className="text-3xl text-black">Color bordes</h2>
+              <h2 className="text-3xl my-2 text-black">Color bordes</h2>
             </div>
-            <div className="grid grid-cols-10 w-96">
+            <div className="grid grid-cols-10 ">
               {fillStrokeColors.map((i, index) => {
                 return (
                   <div

@@ -381,9 +381,12 @@ const EstampadosDetail = () => {
                 <button className="btn btn-primary mt-28">Consultar.</button>
         </div>
       </div>
-      <section>
+      <section className="bg-gray-100 border rounded-lg mx-6 my-20">
+        <div className="mt-12 px-4 mb-2">
+          <h2 className="text-2xl text-black font-semibold  border-b">Esto  tambien podria gustarte</h2>
+        </div>
         <div
-          className="flex  gap-5 my-12 snap-mandatory overflow-x-auto max-w-screen p-4 mx-4
+          className="flex  gap-5 mb-12 snap-mandatory overflow-x-auto max-w-screen p-4 mx-4 bg-white
         "
         >
           {dataFromSvg &&

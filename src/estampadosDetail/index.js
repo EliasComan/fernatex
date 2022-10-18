@@ -3,17 +3,22 @@ import React, { Suspense, useEffect, useState } from "react";
 import { Orbit } from "@uiball/loaders";
 import { estampadosSvg } from "../components/estampados/EstampadosObj";
 import { motion } from "framer-motion";
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
 const EstampadosDetail = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const { name } = useParams();
   const [LogoImport, setLogoImport] = useState();
   const [fill, setFill] = useState();
   const [color, setColor] = useState();
   const [BgColor, setBgColor] = useState();
-  const [dataFromSvg, setDataFromSvg] = useState()
+  const [dataFromSvg, setDataFromSvg] = useState();
+  const [selectForm, setselectForm] = useState();
+  const [nombre, setNombre] = useState();
+  const [nombreEmpresa, setNombreEmpresa] = useState();
+  const [email, setEmail] = useState();
+  const [telefono, setTelefono] = useState();
   const bgColors = [
     "bg-white",
     "bg-gray-200",
@@ -180,15 +185,15 @@ const EstampadosDetail = () => {
   ];
   const getrandomNumber = () => {
     const numbersGenerated = [];
-    const dataRandmon = []
+    const dataRandmon = [];
     for (let index = 0; numbersGenerated.length <= 10; index++) {
-      const randomNumber = Math.random() * 100 -2;
+      const randomNumber = Math.random() * 100 - 2;
       const randomFloor = Math.floor(randomNumber);
       numbersGenerated.push(randomFloor);
       dataRandmon.push(estampadosSvg.at(randomFloor));
     }
-    
-    return dataRandmon
+
+    return dataRandmon;
   };
 
   const handleBgColor = (bgColor) => {
@@ -200,11 +205,16 @@ const EstampadosDetail = () => {
   const handleStrokeColor = (strokeColor) => {
     setColor(strokeColor);
   };
-  const handleNavigate  = (e,nombre) => {
-    navigate(`/estampados/${nombre}`)
-  }
+  const handleNavigate = (e, nombre) => {
+    navigate(`/estampados/${nombre}`);
+  };
+  const handleForm = (e) => {
+    e.preventDefault();
+    console.log("form");
+    console.log(selectForm, nombre, nombreEmpresa, telefono, email);
+  };
   useEffect(() => {
-   setDataFromSvg( getrandomNumber())
+    setDataFromSvg(getrandomNumber());
     const importDinamico = React.lazy(
       async () => await import(`../components/estampados/dist/${name}`)
     );
@@ -213,9 +223,15 @@ const EstampadosDetail = () => {
 
   return (
     <div>
-      <div className="flex justify-around my-12">
+      <div className="flex justify-around mt-12 mb-2 border-2 p-2 mx-12">
         {LogoImport && (
-          <Suspense fallback={<div className="h-screen flex items-center justify-center"><Orbit size={35} color="#231F20" /></div>}>
+          <Suspense
+            fallback={
+              <div className="h-screen flex items-center justify-center">
+                <Orbit size={35} color="#231F20" />
+              </div>
+            }
+          >
             <LogoImport
               className={`h-screen border shadow-lg ${BgColor}`}
               stroke={color}
@@ -223,16 +239,16 @@ const EstampadosDetail = () => {
             />
           </Suspense>
         )}
-        <div className="">
+        <div className="border-l-2 border-spacing-5 px-10 pt-2">
           <div>
-            <h2 className="text-3xl my-2 text-black">Color de fondo</h2>
+            <h2 className="text-3xl mb-2 text-black">Color de fondo</h2>
           </div>
 
           <div className="grid grid-cols-10 ">
             {bgColors.map((i, index) => {
               return (
                 <div
-                  key={i+index+'bg'}
+                  key={i + index + "bgColor"}
                   onClick={() => handleBgColor(i)}
                   className={`w-8 h-8 ${i} grid`}
                 ></div>
@@ -247,7 +263,7 @@ const EstampadosDetail = () => {
               {fillStrokeColors.map((i, index) => {
                 return (
                   <div
-                    key={ i+index+'stroke'}
+                    key={i + index + "stroke"}
                     onClick={() => handleFillColor(i)}
                     style={{ backgroundColor: i }}
                     className={`w-8 h-8  grid`}
@@ -264,7 +280,7 @@ const EstampadosDetail = () => {
               {fillStrokeColors.map((i, index) => {
                 return (
                   <div
-                    key={i+index+'strokecolor'}
+                    key={i + index + "strokecolor"}
                     onClick={() => handleStrokeColor(i)}
                     style={{ backgroundColor: i }}
                     className={`w-8 h-8  grid`}
@@ -275,28 +291,120 @@ const EstampadosDetail = () => {
           </div>
         </div>
       </div>
-      <section>
-          <div
-            className="flex  gap-5 my-12 snap-mandatory overflow-x-auto max-w-screen p-4 mx-4
-        "
-          >
-            { dataFromSvg &&
-              dataFromSvg.map((i,index) => {
-                return <div className="shrink-0 rounded w-2/5  shadow-lg snap-center ">
-                <motion.img
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 1 }}
-                viewport={{ once: true }}
-                key={i.svg + "/data/" + index}
-                className=" aspect-video object-cover border-xl shadow-md rounded-lg"
-                src={i.svg}
-                alt="svg"
-                onClick={(e) =>handleNavigate(e,i.nombre)}
+      <div className=" mx-12 mt-20 flex  border rounded-lg">
+        <div className="w-4/6 flex flex-col items-start justify-start p-12 border-y-2 shadow bg-gray-100">
+          <h2 className="text-3xl text-black">
+            Consulta acerca de nuestros servicios.
+          </h2>
+          <form className="w-full  mt-6  " onSubmit={(e) => handleForm(e)}>
+            <div className="flex justify-between items-center w-full ">
+              <div className="form-control w-full max-w-xs">
+                <label className="label">
+                  <span className="label-text text-black">Nombre</span>
+                </label>
+                <input
+                  type="text"
+                  onChange={(e) => setNombre(e.target.value)}
+                  placeholder="..."
+                  className="input input-bordered w-full max-w-xs text-black"
                 />
-                </div> 
+              </div>
+              <div className="form-control w-full max-w-xs">
+                <label className="label">
+                  <span className="label-text text-black">Nombre empresa</span>
+                </label>
+                <input
+                  onChange={(e) => setNombreEmpresa(e.target.value)}
+                  type="text"
+                  placeholder="..."
+                  className="input input-bordered w-full max-w-xs text-black"
+                />
+              </div>
+            </div>
+            <div className="w-full my-10 flex flex-col  justify-center   rounded-md">
+              <h2 className="text-black text-xl">
+                ¿Con cual rubro te identificas mas?
+              </h2>
+              <select
+                onChange={(e) => setselectForm(e.target.value)}
+                defaultValue={"Marca"}
+                className="select w-full text-black"
+              >
+                <option disabled>¿Con cual rubro te identificas mas?</option>
+                <option className="text-black" value={"Marca"}>
+                  Marca
+                </option>
+                <option className="text-black" value={"Mayorista"}>
+                  Mayorista
+                </option>
+                <option className="text-black" value={"confeccionista"}>
+                  Confeccionista
+                </option>
+              </select>
+            </div>
+            <div className="flex justify-between items-center w-full">
+              <div className="form-control w-full max-w-xs">
+                <label className="label">
+                  <span className="label-text text-black">Email</span>
+                </label>
+                <input
+                  type="email"
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="..."
+                  className="input input-bordered w-full max-w-xs text-black"
+                />
+              </div>
+              <div className="form-control w-full max-w-xs">
+                <label className="label">
+                  <span className="label-text text-black">
+                    Numero de telefono
+                  </span>
+                </label>
+                <input
+                  type="text"
+                  onChange={(e) => setTelefono(e.target.value)}
+                  placeholder="..."
+                  className="input input-bordered w-full max-w-xs text-black"
+                />
+              </div>
+            </div>
+            <div className="flex items-center justify-end">
+              <button className="btn btn-primary" onClick={() => handleForm()}>
+                {" "}
+                Consultar
+              </button>
+            </div>
+          </form>
+        </div>
+        <div className="w-2/6 flex items-center justify-around flex-col p-4 border shadow">
+                <h2 className="text-5xl text-black text-center">¿Sabias que ademas podes subir tu propio diseño y realizar tu consulta a partir del mismo?</h2>
+                <button className="btn btn-primary">Consultar.</button>
+        </div>
+      </div>
+      <section>
+        <div
+          className="flex  gap-5 my-12 snap-mandatory overflow-x-auto max-w-screen p-4 mx-4
+        "
+        >
+          {dataFromSvg &&
+            dataFromSvg.map((i, index) => {
+              return (
+                <div className="shrink-0 rounded w-2/5  shadow-lg snap-center ">
+                  <motion.img
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 1 }}
+                    viewport={{ once: true }}
+                    key={i.svg + "/data/" + index}
+                    className=" aspect-video object-cover border-xl shadow-md rounded-lg"
+                    src={i.svg}
+                    alt="svg"
+                    onClick={(e) => handleNavigate(e, i.nombre)}
+                  />
+                </div>
+              );
             })}
-          </div>
+        </div>
       </section>
     </div>
   );

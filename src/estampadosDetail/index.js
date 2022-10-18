@@ -368,17 +368,17 @@ const EstampadosDetail = () => {
                 />
               </div>
             </div>
-            <div className="flex items-center justify-end">
+            <div className="flex items-center justify-end mt-8">
               <button className="btn btn-primary" onClick={() => handleForm()}>
                 {" "}
-                Consultar
+                Consultar.
               </button>
             </div>
           </form>
         </div>
-        <div className="w-2/6 flex items-center justify-around flex-col p-4 border shadow">
+        <div className="w-2/6 flex items-center justify-around flex-col p-4 border shadow ">
                 <h2 className="text-5xl text-black text-center">¿Sabias que ademas podes subir tu propio diseño y realizar tu consulta a partir del mismo?</h2>
-                <button className="btn btn-primary">Consultar.</button>
+                <button className="btn btn-primary mt-28">Consultar.</button>
         </div>
       </div>
       <section>

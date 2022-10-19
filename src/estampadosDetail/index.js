@@ -202,9 +202,9 @@ const EstampadosDetail = () => {
             }
           >
             <LogoImport
-              className={`h-screen border-lg shadow-lg ${BgColor}`}
-              stroke={color}
-              fill={fill}
+              className={`h-screen border-lg shadow-lg ${BgColor && BgColor}`}
+              stroke={color && color}
+              fill={fill && fill}
             />
           </Suspense>
         )}

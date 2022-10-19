@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
 const EstampadosDetail = () => {
+  
   const navigate = useNavigate();
   const { name } = useParams();
   const [LogoImport, setLogoImport] = useState();
@@ -223,7 +224,7 @@ const EstampadosDetail = () => {
 
   return (
     <div>
-      <div className="flex justify-around mt-12 mb-2 border-2 p-2 mx-12">
+      <div className="flex justify-around mt-12 mb-2 border-2 py-8 px-2 rounded-xl mx-12">
         {LogoImport && (
           <Suspense
             fallback={
@@ -233,24 +234,24 @@ const EstampadosDetail = () => {
             }
           >
             <LogoImport
-              className={`h-screen border shadow-lg ${BgColor}`}
+              className={`h-screen border-lg shadow-lg ${BgColor}`}
               stroke={color}
               fill={fill}
             />
           </Suspense>
         )}
-        <div className="border-l-2 border-spacing-5 px-10 pt-2">
+        <div className="border-2 py-4 rounded-xl border-spacing-5 px-10  bg-gray-100">
           <div>
             <h2 className="text-3xl mb-2 text-black">Color de fondo</h2>
           </div>
 
-          <div className="grid grid-cols-10 ">
+          <div className="grid grid-cols-10 border rounded-lg p-2">
             {bgColors.map((i, index) => {
               return (
                 <div
                   key={i + index + "bgColor"}
                   onClick={() => handleBgColor(i)}
-                  className={`w-8 h-8 ${i} grid`}
+                  className={`w-8 h-8 ${i} grid rounded-lg m-0.5`}
                 ></div>
               );
             })}
@@ -259,14 +260,14 @@ const EstampadosDetail = () => {
             <div>
               <h2 className="text-3xl my-2 text-black">Color de relleno</h2>
             </div>
-            <div className="grid grid-cols-10 ">
+            <div className="grid grid-cols-10 border rounded-lg p-2">
               {fillStrokeColors.map((i, index) => {
                 return (
                   <div
                     key={i + index + "stroke"}
                     onClick={() => handleFillColor(i)}
                     style={{ backgroundColor: i }}
-                    className={`w-8 h-8  grid`}
+                    className={`w-8 h-8  grid rounded-lg m-0.5`}
                   ></div>
                 );
               })}
@@ -276,14 +277,14 @@ const EstampadosDetail = () => {
             <div>
               <h2 className="text-3xl my-2 text-black">Color bordes</h2>
             </div>
-            <div className="grid grid-cols-10 ">
+            <div className="grid grid-cols-10 border rounded-lg p-2">
               {fillStrokeColors.map((i, index) => {
                 return (
                   <div
                     key={i + index + "strokecolor"}
                     onClick={() => handleStrokeColor(i)}
                     style={{ backgroundColor: i }}
-                    className={`w-8 h-8  grid`}
+                    className={`w-8 h-8  grid rounded-lg m-0.5`}
                   ></div>
                 );
               })}
@@ -291,8 +292,8 @@ const EstampadosDetail = () => {
           </div>
         </div>
       </div>
-      <div className=" mx-12 mt-20 flex  border rounded-lg">
-        <div className="w-4/6 flex flex-col items-start justify-start p-12 border-y-2 shadow bg-gray-100">
+      <div className=" mx-12 mt-20 flex    rounded-xl">
+        <div className="w-4/6 flex flex-col items-start justify-start p-12 border-y-2 rounded-xl shadow bg-gray-100">
           <h2 className="text-3xl text-black">
             Consulta acerca de nuestros servicios.
           </h2>
@@ -364,24 +365,24 @@ const EstampadosDetail = () => {
                   type="text"
                   onChange={(e) => setTelefono(e.target.value)}
                   placeholder="..."
-                  className="input input-bordered w-full max-w-xs text-black"
+                  className="input input-bordered  text-black"
                 />
               </div>
             </div>
             <div className="flex items-center justify-end mt-8">
               <button className="btn btn-primary" onClick={() => handleForm()}>
-                {" "}
+                
                 Consultar.
               </button>
             </div>
           </form>
         </div>
-        <div className="w-2/6 flex items-center justify-around flex-col p-4 border shadow ">
+        <div className="w-2/6 flex items-center justify-around flex-col p-4 border rounded-xl  shadow ">
                 <h2 className="text-5xl text-black text-center">¿Sabias que ademas podes subir tu propio diseño y realizar tu consulta a partir del mismo?</h2>
-                <button className="btn btn-primary mt-28">Consultar.</button>
+                <button onClick={ () =>navigate('/contacto')} className="btn btn-primary mt-28">Consultar.</button>
         </div>
       </div>
-      <section className="bg-gray-100 border rounded-lg mx-6 my-20">
+      <section className="bg-gray-100 border rounded-xl mx-6 my-20">
         <div className="mt-12 px-4 mb-2">
           <h2 className="text-2xl text-black font-semibold  border-b">Esto  tambien podria gustarte</h2>
         </div>

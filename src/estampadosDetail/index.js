@@ -22,8 +22,6 @@ const EstampadosDetail = () => {
   const [telefono, setTelefono] = useState();
   const bgColors = [
     "bg-white",
-    "bg-gray-200",
-    "bg-gray-300",
     "bg-gray-400",
     "bg-gray-500",
     "bg-gray-600",
@@ -31,8 +29,6 @@ const EstampadosDetail = () => {
     "bg-gray-800",
     "bg-gray-900",
     "bg-black",
-    "bg-red-50",
-    "bg-red-100",
     "bg-red-200",
     "bg-red-300",
     "bg-red-400",
@@ -41,8 +37,6 @@ const EstampadosDetail = () => {
     "bg-red-700",
     "bg-red-800",
     "bg-red-900",
-    "bg-yellow-50",
-    "bg-yellow-100",
     "bg-yellow-200",
     "bg-yellow-300",
     "bg-yellow-400",
@@ -51,8 +45,6 @@ const EstampadosDetail = () => {
     "bg-yellow-700",
     "bg-yellow-800",
     "bg-yellow-900",
-    "bg-green-50",
-    "bg-green-100",
     "bg-green-200",
     "bg-green-300",
     "bg-green-400",
@@ -61,8 +53,6 @@ const EstampadosDetail = () => {
     "bg-green-700",
     "bg-green-800",
     "bg-green-900",
-    "bg-blue-50",
-    "bg-blue-100",
     "bg-blue-200",
     "bg-blue-300",
     "bg-blue-400",
@@ -71,8 +61,6 @@ const EstampadosDetail = () => {
     "bg-blue-700",
     "bg-blue-800",
     "bg-blue-900",
-    "bg-indigo-50",
-    "bg-indigo-100",
     "bg-indigo-200",
     "bg-indigo-300",
     "bg-indigo-400",
@@ -81,8 +69,6 @@ const EstampadosDetail = () => {
     "bg-indigo-700",
     "bg-indigo-800",
     "bg-indigo-900",
-    "bg-purple-50",
-    "bg-purple-100",
     "bg-purple-200",
     "bg-purple-300",
     "bg-purple-400",
@@ -91,8 +77,6 @@ const EstampadosDetail = () => {
     "bg-purple-700",
     "bg-purple-800",
     "bg-purple-900",
-    "bg-pink-50",
-    "bg-pink-100",
     "bg-pink-200",
     "bg-pink-300",
     "bg-pink-400",
@@ -103,9 +87,7 @@ const EstampadosDetail = () => {
     "bg-pink-900",
   ];
   const fillStrokeColors = [
-    "#0000000",
     "#ffffff",
-    "#E5E7EB",
     "#D1D5DB",
     "#9CA3AF",
     "#6B7280",
@@ -113,8 +95,6 @@ const EstampadosDetail = () => {
     "#374151",
     "#1F2937",
     "#111827",
-    "#FEF2F2",
-    "#FEE2E2",
     "#FECACA",
     "#FCA5A5",
     "#F87171",
@@ -123,8 +103,6 @@ const EstampadosDetail = () => {
     "#B91C1C",
     "#991B1B",
     "#7F1D1D",
-    "#FFFBEB",
-    "#FEF3C7",
     "#FDE68A",
     "#FCD34D",
     "#DBBF24",
@@ -133,8 +111,6 @@ const EstampadosDetail = () => {
     "#B45309",
     "#92400E",
     "#78350F",
-    "#ECFDF5",
-    "#D1FAE5",
     "#A7F3D0",
     "#6EE7B7",
     "#34D399",
@@ -143,8 +119,6 @@ const EstampadosDetail = () => {
     "#047857",
     "#065F46",
     "#064E3B",
-    "#EFF6FF",
-    "#DBEAFE",
     "#BFDBFE",
     "#93C5FD",
     "#60A5FA",
@@ -153,8 +127,6 @@ const EstampadosDetail = () => {
     "#1D4ED8",
     "#1E40AF",
     "#1E3A8A",
-    "#EEF2FF",
-    "#E0E7FF",
     "#C7D2FE",
     "#A5B4FC",
     "#818CF8",
@@ -163,8 +135,6 @@ const EstampadosDetail = () => {
     "#4338CA",
     "#3730A3",
     "#312E81",
-    "#F5F3FF",
-    "#EDE8FE",
     "#DDD6FE",
     "#C4B5FD",
     "#A78BFA",
@@ -173,8 +143,6 @@ const EstampadosDetail = () => {
     "#6D28D9",
     "#5B21B6",
     "#4C1D95",
-    "#FDF2F8",
-    "#FCE7F3",
     "#FBCFE8",
     "#F9A8D4",
     "#F472B6",
@@ -245,7 +213,7 @@ const EstampadosDetail = () => {
             <h2 className="text-3xl mb-2 text-black">Color de fondo</h2>
           </div>
 
-          <div className="grid grid-cols-10 border rounded-lg p-2">
+          <div className="grid grid-cols-8 border rounded-lg p-2">
             {bgColors.map((i, index) => {
               return (
                 <div
@@ -260,7 +228,7 @@ const EstampadosDetail = () => {
             <div>
               <h2 className="text-3xl my-2 text-black">Color de relleno</h2>
             </div>
-            <div className="grid grid-cols-10 border rounded-lg p-2">
+            <div className="grid grid-cols-8 border rounded-lg p-2">
               {fillStrokeColors.map((i, index) => {
                 return (
                   <div
@@ -277,7 +245,7 @@ const EstampadosDetail = () => {
             <div>
               <h2 className="text-3xl my-2 text-black">Color bordes</h2>
             </div>
-            <div className="grid grid-cols-10 border rounded-lg p-2">
+            <div className="grid grid-cols-8 border rounded-lg p-2">
               {fillStrokeColors.map((i, index) => {
                 return (
                   <div

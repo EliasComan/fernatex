@@ -6,9 +6,15 @@
     background-attachment: fixed;
 }
 .card:hover{
-    background:linear-gradient( to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 100%), url('https://img.freepik.com/premium-photo/bright-collection-colorful-velour-textile-samples-fabric-texture-background_106630-505.jpg?w=1380') !important;
+    background:linear-gradient( to left bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0) 100%), url('https://img.freepik.com/premium-photo/bright-collection-colorful-velour-textile-samples-fabric-texture-background_106630-505.jpg?w=1380') !important;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     color: white;
+}
+.bannerInicio{
+    background:linear-gradient(to left bottom, rgba(0, 0, 0, 0.2) 0%, rgb(0, 0, 0) 100%), url('https://fernatex.herokuapp.com/images/fotosfabrica/deMaquinaria3.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }

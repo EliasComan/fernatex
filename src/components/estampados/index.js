@@ -29,11 +29,10 @@ const Estampados = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
             exit={{ opacity: 0 }}
-            id={index + "svg"}
             layout
-            key={item.svg + "data" + index}
+            key={`${item.svg}+${item.nombre}+data+${index}`}
             onClick={(e) => handleImport(e, item.nombre)}
-            className="w-96 grid my-12  border-xl shadow-md  hover: shadow-xl hover:shadow-primary/20 hover:cursor-pointer hover:border"
+            className="w-96 grid my-12  border-xl shadow-md  hover:shadow-xl hover:shadow-primary/20 hover:cursor-pointer hover:border"
             src={item.svg}
             alt="svg"
           />

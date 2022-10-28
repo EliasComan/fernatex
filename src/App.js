@@ -6,6 +6,7 @@ import Footer from "./components/footer/Footer";
 import Home from "./components/home/Home";
 import Navbar from "./components/navbar/Navbar";
 import Nosotros from "./components/nosotros/Nosotros";
+import Simulador from "./components/simulador";
 
 function App() {
   const Images = () => (<h1>images</h1>)
@@ -21,6 +22,7 @@ function App() {
           <Route path='/nosotros' element ={<Nosotros/>}/>
           <Route path='/estampados' element={<Estampados/>}/>
           <Route path='/estampados/:name' element={<EstampadosDetail/>}/>
+          <Route path="/simulador/:estampado" element={<Simulador/>}/>
         </Routes>
         <Footer/>
     </div>

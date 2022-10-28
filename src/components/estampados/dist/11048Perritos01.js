@@ -1,12 +1,13 @@
 import * as React from "react";
 
-const Svg11048Perritos01 = (props) => (
+const Svg11048Perritos01 = (props, children) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 850.39 850.39"
     role="img"
     {...props}
   >
+ 
     <defs>
       <style>
         {

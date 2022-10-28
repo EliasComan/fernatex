@@ -18,7 +18,7 @@ const Nosotros = () => {
                 </div>
                 <div className='flex flex-col  '>
                     <h1 className='text-3xl font-bold font-sans mx-12 text-black'>Fernatex</h1>
-                    <div className='bg-primary h-1 w-24 mx-12'></div>
+                    <div className='bg-primary h-0.5 w-24 mx-12'></div>
                     <p className='text-ellipsis w-96 mx-12 my-4 text-black'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                      Vero, porro quam, alias voluptatibus rerum eaque voluptate dicta cupiditate quidem architecto similique ad? Mollitia hic laboriosam dolor, 
                      non odio voluptatem placeat!</p>
@@ -38,7 +38,7 @@ const Nosotros = () => {
             <div className='flex my-24'>
                 <div className='flex flex-col  '>
                     <h1 className='text-3xl font-bold font-sans mx-12 text-black'>Nuestra historia</h1>
-                    <div className='bg-primary h-1 w-24 mx-12'></div>
+                    <div className='bg-primary h-0.5 w-24 mx-12'></div>
                     <p className='text-ellipsis w-96 mx-12 my-4 text-black'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                      Vero, porro quam, alias voluptatibus rerum eaque voluptate dicta cupiditate quidem architecto similique ad? Mollitia hic laboriosam dolor, 
                      non odio voluptatem placeat!</p>

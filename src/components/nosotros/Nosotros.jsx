@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 const Nosotros = () => {
   return (
     <div>
-        <div className='banner w-full h-48 flex items-center justify-center'>
+        <div className='banner w-full h-72 flex items-center justify-center'>
            <h1 className='text-3xl text-white'>Nosotros</h1>
         </div>
         <div className='flex flex-col w-full items-center justify-center'>

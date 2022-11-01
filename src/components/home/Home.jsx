@@ -13,13 +13,11 @@ const Home = () => {
     <div className="flex flex-col items-center">
       <div className="bannerInicio w-screen h-screen">
         <div className=" flex flex-col h-screen items-center justify-center">
-          <h1 className="texto text-6xl text-white">Somos fernatex</h1>
-          <div className="w-72 h-0.5 bg-slate-200"></div>
-          <h2 className="mt-2">
-            Pruebe nuestro simulador haciendo click{' '}
-            <Link to={'/simulador/11047Aviones01'}>
-              <strong className="">aqui</strong>
-            </Link>{' '}
+          <h1 className="texto text-7xl text-white" >Fernatex</h1>
+          <div className="w-48 h-0.5 bg-slate-200"></div>
+          <h2 className="mt-2 text-2xl">
+            Estamperia artesanal{' '}
+            
           </h2>
         </div>
       </div>

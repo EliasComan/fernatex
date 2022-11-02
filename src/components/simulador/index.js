@@ -162,8 +162,19 @@ const Simulador = () => {
   }, [estampado]);
   return (
     <div> 
-      <div className=" w-screen">
-      <div className="w-screen  my-5 overflow-x-auto flex  border rounded-xl p-2">
+      <div className="flex flex-col items-center justify-center my-12 text-black ">
+        <h1 className="text-black text-4xl font-serif my-4">Bienvenido a nuestro simulador interactivo</h1>
+        <h2><strong>Paso 1.</strong></h2>
+        <p>Elija un diseño que mas le guste</p>
+        <h2><strong>Paso 2.</strong></h2>
+        <p>Elija un color de fondo, de relleno y bordes</p>
+        <h2><strong>Paso 3.</strong></h2>
+        <p>Repita cuantas veces quiera</p>
+        
+
+      </div>
+      <div className=" w-screen flex flex-col items-center justify-center">
+      <div className="w-11/12  my-5 overflow-x-auto flex  border rounded-xl p-2">
           {estampadosSvg.slice(0,22).map((i, index) => {
             return (
               <div className=" shrink-0  mx-1 snap-center shadow-lg  ">
@@ -178,7 +189,7 @@ const Simulador = () => {
             );
           })}
         </div>
-        <div className="w-screen  my-5 overflow-x-auto flex  border rounded-xl p-2">
+        <div className="w-11/12  my-5 overflow-x-auto flex  border rounded-xl p-2">
           {estampadosSvg.slice(23,50).map((i, index) => {
             return (
               <div className=" shrink-0 rounded   mx-1 shadow-lg snap-center ">
@@ -193,7 +204,7 @@ const Simulador = () => {
             );
           })}
         </div>
-        <div className="w-screen  my-5 overflow-x-auto flex  border rounded-xl p-2">
+        <div className="w-11/12  my-5 overflow-x-auto flex  border rounded-xl p-2">
           {estampadosSvg.slice(50,75).map((i, index) => {
             return (
               <div className=" shrink-0 rounded   mx-1 shadow-lg snap-center ">

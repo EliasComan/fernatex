@@ -7,18 +7,17 @@ import imageContacto from '../../images/ADMINISTRACION Y VENTAS 1.jpg'
 import imageEstampados from '../../images/MUESTRAS 5.jpg'
 import imageNosotros from '../../images/PERSONAL FABRICA 1.jpg'
 import imageSimulador from '../../images/IMG_3118.jpg'
+import svgMarca from '../../images/logo/Logo Fernatex (completo).svg'
 
 const Home = () => {
   return (
     <div className="flex flex-col items-center">
       <div className="bannerInicio w-screen h-screen">
-        <div className=" flex flex-col h-screen items-center justify-center">
-          <h1 className="texto text-7xl text-white" >Fernatex</h1>
-          <div className="w-48 h-0.5 bg-slate-200"></div>
-          <h2 className="mt-2 text-2xl">
-            Estamperia artesanal{' '}
+        <div className=" grid grid-cols-3 h-screen items-center justify-center content-center">
+          
+          <img src={svgMarca} className='w-max  grid col-start-2 justify-center content-center' alt="Svg marca fernatex" />
+          
             
-          </h2>
         </div>
       </div>
       <div className=" my-24  grid grid-rows-4 grid-cols-2 w-5/6 border rounded ">

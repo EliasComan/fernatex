@@ -3,13 +3,14 @@ import './styles'
 import { Link } from 'react-router-dom'
 import React from 'react'
 import { motion } from 'framer-motion'
+import svgMarcaComp from '../../images/logo/Logo Fernatex (Texto).svg'
 
 const Navbar = () => {
   return (
     <div className="navbar bg-base-100 px-48">
   <div className="flex-1">
     <Link to={'/'} className="md:w-28">
-      <motion.img whileHover={{scale:1.1}} src={require('../../images/logo/fernatex_logo_final.png')} alt="" />
+      <motion.img whileHover={{scale:1.1}} src={svgMarcaComp} alt="" />
     </Link>
   </div>
   <div className="flex-none">

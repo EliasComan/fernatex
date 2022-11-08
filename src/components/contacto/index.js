@@ -26,7 +26,7 @@ const Contacto = () => {
                   <input
                     type="text"
                     placeholder="Juan garmendia"
-                    className="input input-primary input-bordered w-96 max-w-md shadow-lg"
+                    className="input input-primary input-bordered input-lg w-96 max-w-md shadow-lg"
                     required
                   />
                 </div>
@@ -39,7 +39,7 @@ const Contacto = () => {
                   <input
                     type="text"
                     placeholder="Fernatex.."
-                    className="input input-primary input-bordered  w-96 shadow-lg"
+                    className="input input-primary input-bordered input-lg w-96 shadow-lg"
                     required
                   />
                 </div>
@@ -69,7 +69,7 @@ const Contacto = () => {
                   <input
                     type="text"
                     placeholder="112345678"
-                    className="input input-primary input-bordered w-96 max-w-md shadow-lg"
+                    className="input input-primary input-bordered w-96 input-lg max-w-md shadow-lg"
                     required
                   />
                 </div>
@@ -102,7 +102,7 @@ const Contacto = () => {
                 </label>
                 <input
                   type="file"
-                  className="file-input file-input-bordered file-input-primary w-full shadow-lg "
+                  className="file-input file-input-bordered file-input-primary file-input-lg w-full shadow-lg "
                 />
               </div>
               <div>

@@ -56,7 +56,7 @@ const Contacto = () => {
                   <input
                     type="text"
                     placeholder="email@ejemplo.com"
-                    className="input input-primary input-bordered w-96 max-w-md shadow-lg"
+                    className="input input-primary input-bordered input-lg w-96 max-w-md shadow-lg"
                     required
                   />
                 </div>
@@ -82,7 +82,7 @@ const Contacto = () => {
                 </span>
               </label>
               <select
-                className="select select-bordered select-primary text-black w-5/6 shadow-lg "
+                className="select select-bordered select-primary select-lg text-black w-5/6 shadow-lg "
                 required
               >
                 <option disabled selected>

@@ -14,10 +14,10 @@ const Contacto = () => {
       </div>
       <div className=" flex items-center justify-center h-screen w-screen mb-12">
         <div className="w-5/6 h-5/6 flex  bg-gray-200/75 mx-12 items-center   border-2 shadow rounded-xl  justify-around">
-          <div className="w-full h-full flex flex-col pt-12">
-            <div className="flex items-start ">
+          <div className="w-full h-full flex flex-col pt-12 justify-around ">
+            <div className="flex items-start mx-10">
               <div className="flex justify-around w-full">
-                <div className="form-control w-full mx-10 ">
+                <div className="form-control w-full  ">
                   <label className="label">
                     <span className="label-text text-black font-semibold">
                       Nombre
@@ -25,12 +25,12 @@ const Contacto = () => {
                   </label>
                   <input
                     type="text"
-                    placeholder="..."
+                    placeholder="Juan garmendia"
                     className="input input-primary input-bordered w-96 max-w-md shadow-lg"
                     required
                   />
                 </div>
-                <div className="form-control w-full ">
+                <div className="form-control w-full  ">
                   <label className="label">
                     <span className="label-text text-black font-semibold">
                       Nombre empresa
@@ -38,14 +38,14 @@ const Contacto = () => {
                   </label>
                   <input
                     type="text"
-                    placeholder="..."
+                    placeholder="Fernatex.."
                     className="input input-primary input-bordered  w-96 shadow-lg"
                     required
                   />
                 </div>
               </div>
             </div>
-            <div className=" flex items-start mx-10">
+            <div className=" flex items-start mx-10 ">
               <div className="flex justify-around w-full ">
                 <div className="form-control w-full ">
                   <label className="label">
@@ -55,7 +55,7 @@ const Contacto = () => {
                   </label>
                   <input
                     type="text"
-                    placeholder="..."
+                    placeholder="email@ejemplo.com"
                     className="input input-primary input-bordered w-96 max-w-md shadow-lg"
                     required
                   />
@@ -68,7 +68,7 @@ const Contacto = () => {
                   </label>
                   <input
                     type="text"
-                    placeholder="..."
+                    placeholder="112345678"
                     className="input input-primary input-bordered w-96 max-w-md shadow-lg"
                     required
                   />

@@ -97,7 +97,7 @@ const Contacto = () => {
               <div className="form-control w-full  ">
                 <label className="label">
                   <span className="label-text text-black font-semibold">
-                    Subi tu propio estampado para que nosotros podamos verlo!
+                    Subi tu propio estampado para que nosotros podamos verlo! (Opcional)
                   </span>
                 </label>
                 <input

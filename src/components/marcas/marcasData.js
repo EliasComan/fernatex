@@ -47,7 +47,14 @@ export const MarcasData = [
     nombre:'Wanama',
     imagen:require('../../images/marcas/wanama.png')
 },
-
+{
+    nombre:'MSM textil',
+    imagen:require('../../images/marcas/msm.jpg')
+},
+{
+    nombre:'Rapport Grazziano',
+    imagen:require('../../images/marcas/rapportGraziano.jpg')
+}
 
 
 

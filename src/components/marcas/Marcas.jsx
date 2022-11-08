@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const Marcas = () => {
 const render = MarcasData.map((item, index )=> (
     <motion.div key={item.nombre+index} className='flex flex-col items-center justify-center'>
-        <motion.img src={item.imagen} className='w-20 rounded-full shadow-xl' ></motion.img>
+        <motion.img src={item.imagen} className='w-20 h-20 rounded-full shadow-xl' ></motion.img>
         {item.nombre}
     </motion.div>
 )

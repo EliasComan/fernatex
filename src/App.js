@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 
+import Contacto from "./components/contacto";
 import Estampados from "./components/estampados";
 import EstampadosDetail from "./estampadosDetail";
 import Footer from "./components/footer/Footer";
@@ -21,6 +22,7 @@ function App() {
           <Route path="/images" element={<Images/>}/>
           <Route path='/nosotros' element ={<Nosotros/>}/>
           <Route path='/estampados' element={<Estampados/>}/>
+          <Route path='/contacto' element={<Contacto/>}/>
           <Route path='/estampados/:name' element={<EstampadosDetail/>}/>
           <Route path="/simulador/:estampado" element={<Simulador/>}/>
         </Routes>

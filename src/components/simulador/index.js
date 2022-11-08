@@ -163,7 +163,7 @@ const Simulador = () => {
   return (
     <div> 
       <div className="flex flex-col items-center justify-center my-12 text-black ">
-        <h1 className="text-black text-4xl font-serif my-4">Bienvenido a nuestro simulador interactivo</h1>
+        <h1 className="text-black text-4xl font-serif my-4">Bienvenido/a a nuestro simulador interactivo</h1>
         <h2><strong>Paso 1.</strong></h2>
         <p>Elija un diseño que mas le guste</p>
         <h2><strong>Paso 2.</strong></h2>

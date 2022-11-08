@@ -63,10 +63,10 @@ const EstampadosDetail = () => {
         )}
         <div className="flex flex-col items-center justify-around w-2/6 h-screen ">
           <div className="flex flex-col items-center justify-center  text-center h-2/6  text-black">
-              <h2 className="text-4xl ">Podes consultar por este diseño y muchas mas <hr></hr> en nuestra seccion de <strong><Link to={'/contacto'}>contacto</Link></strong></h2>
+              <h2 className="text-4xl ">Podes consultar por este diseño y muchas mas  en nuestra seccion de <strong><Link to={'/contacto'}>contacto</Link></strong> <hr></hr></h2>
           </div>
           <div clasName="text-center  flex text-black flex-col items-center border h-2/6 border-t-2 justify-center">
-              <h2 className="text-4xl text-center text-black">¿Te gustaria ver este diseño en otros colores?<hr></hr> podes verlo en nuestro <strong><Link to={'/simulador/11047Aviones01'}>simulador.</Link></strong></h2>
+              <h2 className="text-4xl text-center text-black">¿Te gustaria ver este diseño en otros colores? podes verlo en nuestro <strong><Link to={'/simulador/11047Aviones01'}>simulador. <hr></hr></Link></strong></h2>
           </div>
         </div>
        

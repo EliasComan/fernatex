@@ -1,6 +1,10 @@
 import './styles.css'
 
 import React from 'react'
+import adminyventas from '../../images/ADMINISTRACION Y VENTAS 1.jpg'
+import imgEdificio from '../../images/IMG_3087 (1).jpg'
+import imgFabrica from '../../images/IMG_3049.jpg'
+import imgPersonal from '../../images/PERSONAL FABRICA 1 cambio.jpg'
 import { motion } from 'framer-motion'
 
 const Nosotros = () => {
@@ -12,8 +16,8 @@ const Nosotros = () => {
         <div className='flex flex-col w-full items-center justify-center'>
             <div className='flex my-24'>
                 <div className=' mt-20'>
-                <motion.img layout initial={{opacity:0}}whileInView={{opacity:1}} transition={{duration:2}} viewport={{once:true}}  className='w-96 h-auto' src="https://www.textilibera.com.ar/wp-content/uploads/2020/09/comp1.jpg" alt="" />
-                <motion.img layout initial={{opacity:0}}whileInView={{opacity:1}} transition={{duration:2}} viewport={{once:true}}  className='w-96   h-auto mt-4' src='https://www.textilibera.com.ar/wp-content/uploads/2020/09/comp3.jpg' alt=''/>
+                <motion.img layout initial={{opacity:0}}whileInView={{opacity:1}} transition={{duration:2}} viewport={{once:true}}  className='w-96 h-auto' src={imgEdificio} alt="" />
+                <motion.img layout initial={{opacity:0}}whileInView={{opacity:1}} transition={{duration:2}} viewport={{once:true}}  className='w-96   h-auto mt-4' src={imgFabrica} alt=''/>
 
                 </div>
                 <div className='flex flex-col  '>
@@ -51,8 +55,8 @@ const Nosotros = () => {
                         </p>
                 </div>
                 <div className=' mt-20'>
-                    <motion.img layout initial={{opacity:0}}whileInView={{opacity:1}} transition={{duration:2}} viewport={{once:true}} className='w-96 h-auto' src={"https://www.textilibera.com.ar/wp-content/uploads/2020/09/historia2-scaled.jpg"} alt="" />
-                    <motion.img layout initial={{opacity:0}}whileInView={{opacity:1}} transition={{duration:2}} viewport={{once:true}} className='w-96   h-auto mt-4' src='https://www.textilibera.com.ar/wp-content/uploads/2020/09/historia4.jpg' alt=''/>
+                    <motion.img layout initial={{opacity:0}}whileInView={{opacity:1}} transition={{duration:2}} viewport={{once:true}} className='w-96 h-auto' src={adminyventas} alt="" />
+                    <motion.img layout initial={{opacity:0}}whileInView={{opacity:1}} transition={{duration:2}} viewport={{once:true}} className='w-96   h-auto mt-4' src={imgPersonal} alt=''/>
 
                 </div>
             </div>

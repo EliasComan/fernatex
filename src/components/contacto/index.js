@@ -7,13 +7,13 @@ const Contacto = () => {
   return (
     <div className="flex flex-col items-center ">
       <div className="text-black flex flex-col items-center justify-center mt-10">
-        <h1 className="text-4xl font-serif">
+        <h1 className="text-7xl font-serif">
           <strong>Contactenos</strong>
         </h1>
         <p>Nuestro equipo se comunicara lo mas rapido posible</p>
       </div>
       <div className=" flex items-center justify-center h-screen w-screen mb-12">
-        <div className="w-5/6 h-5/6 flex  bg-gray-200/75 mx-12 items-center   border-2 shadow rounded-xl  justify-around">
+        <div className="w-4/6 h-4/6 flex  bg-gray-200/75 mx-12 items-center   border-2 shadow-xl rounded-xl  justify-around">
           <div className="w-full h-full flex flex-col pt-12 justify-around ">
             <div className="flex items-start mx-10">
               <div className="flex justify-around w-full">

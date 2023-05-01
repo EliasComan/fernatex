@@ -54,7 +54,7 @@ const Estampados = () => {
   return (
     <div>
        <div className='banner w-full h-72 flex items-center justify-center'>
-           <h1 className='text-3xl text-white'>Nuestros estampados</h1>
+           <h1 className='text-6xl text-white'>Nuestros estampados</h1>
         </div>
 
 

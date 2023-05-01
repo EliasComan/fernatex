@@ -151,9 +151,6 @@ const Simulador = () => {
   const handleFillColor = (fillColor) => {
     setFill(fillColor);
   };
-  const handleStrokeColor = (strokeColor) => {
-    setColor(strokeColor);
-  };
   useEffect(() => {
     const importDinamico = React.lazy(
       async () => await import(`../estampados/dist/${estampado}`)
@@ -272,25 +269,7 @@ const Simulador = () => {
                 </div>
               </div>
             </div>
-            <div>
-              <div>
-                <div>
-                  <h2 className="text-3xl text-center text-black">Color bordes</h2>
-                </div>
-                <div className="grid grid-cols-8 border rounded-lg p-8 m-4 bg-gray-200 shadow-xl max-w-screen">
-                  {fillStrokeColors.map((i, index) => {
-                    return (
-                      <div
-                        key={`${i}+${index * 10}+strokecolorS`}
-                        onClick={() => handleStrokeColor(i)}
-                        style={{ backgroundColor: i }}
-                        className={`w-10 h-10  grid shadow-xl border border-gray-200 rounded-lg m-0.5`}
-                      ></div>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
+           
       </div>
         </div>
 

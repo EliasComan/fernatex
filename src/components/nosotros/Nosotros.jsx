@@ -13,10 +13,14 @@ const Nosotros = () => {
         <div className='banner w-full h-72 flex items-center justify-center'>
            <h1 className='text-7xl text-white'>Nosotros</h1>
         </div>
-        <div className='flex flex-col w-full items-center justify-center'>
+        <motion.div initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            exit={{ opacity: 0 }} layout className='flex flex-col w-full items-center justify-center'>
             <div className='flex my-24'>
                 <div className=' mt-20'>
-                <motion.img layout initial={{opacity:0}}whileInView={{opacity:1}} transition={{duration:2}} viewport={{once:true}}  className='w-96 h-auto' src={imgEdificio} alt="" />
+                <motion.img layout initial={{opacity:0}}whileInView={{opacity:1}} transition={{duration:2}} viewport={{once:true}}   className='w-96 h-auto' src={imgEdificio} alt="" />
                 <motion.img layout initial={{opacity:0}}whileInView={{opacity:1}} transition={{duration:2}} viewport={{once:true}}  className='w-96   h-auto mt-4' src={imgFabrica} alt=''/>
 
                 </div>
@@ -30,8 +34,14 @@ const Nosotros = () => {
             </div>
           
 
-        </div>
-         <div className='flex flex-col w-full items-center justify-center'>
+        </motion.div >
+         <motion.div
+         initial={{ opacity: 0 }}
+         whileInView={{ opacity: 1 }}
+         transition={{ duration: 1 }}
+         viewport={{ once: true }}
+         exit={{ opacity: 0 }}
+         className='flex flex-col w-full items-center justify-center'>
             <div className='flex my-24'>
                 <div className='flex flex-col justify-center '>
                     <h1 className='text-4xl font-bold font-sans mx-12 text-black'>Nuestra historia</h1>
@@ -48,7 +58,7 @@ const Nosotros = () => {
             </div>
           
 
-        </div>
+        </motion.div>
     </div>
   )
 }

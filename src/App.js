@@ -15,7 +15,7 @@ function App() {
   
 
   return (
-    <div className="App">
+    <div className= "font[-apple-system]">
       <Navbar/>
         <Routes>
           <Route  path="/" element={<Home/>}/>

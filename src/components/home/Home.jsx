@@ -8,6 +8,7 @@ import imageEstampados from '../../images/MUESTRAS 5.jpg'
 import imageNosotros from '../../images/PERSONAL FABRICA 1 cambio.jpg'
 import imageSimulador from '../../images/IMG_3118.jpg'
 import svgMarca from '../../images/logo/Logo Fernatex (completo).svg'
+import { motion } from 'framer-motion'
 
 const Home = () => {
   return (
@@ -15,12 +16,23 @@ const Home = () => {
       <div className="bannerInicio w-screen h-screen">
         <div className=" grid grid-cols-3 h-screen items-center justify-center content-center">
           
-          <img src={svgMarca} className='w-max  grid col-start-2 justify-center content-center' alt="Svg marca fernatex" />
+          <motion.img
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          exit={{ opacity: 0 }} src={svgMarca} className='w-max  grid col-start-2 justify-center content-center' alt="Svg marca fernatex" />
           
             
         </div>
       </div>
-      <div className=" my-24  grid grid-rows-4 grid-cols-2 w-5/6 border rounded ">
+      <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      exit={{ opacity: 0 }}
+      className=" my-24  grid grid-rows-4 grid-cols-2 w-5/6 border rounded ">
         <div className='flex flex-col items-center justify-center'>
           <h1 className='text-black text-3xl font-serif text-center'>Aprende mas acerca<hr></hr> de <strong><Link to={'/nosotros'}>nosotros.</Link></strong></h1>
           <h2 className='text-center text-black'>Haciendo click <strong><Link to={'/nosotros'}>aqui.</Link></strong></h2>
@@ -51,7 +63,7 @@ const Home = () => {
         
         </div>
         
-      </div>
+      </motion.div>
       <Marcas />
     </div>
   )

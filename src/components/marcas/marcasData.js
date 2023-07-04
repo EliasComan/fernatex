@@ -23,10 +23,7 @@ export const MarcasData = [
     nombre:'Kosiuko',
     imagen:require('../../images/marcas/kosiuko.png')
 },
-{
-    nombre:'Lady Jane',
-    imagen:require('../../images/marcas/ladyjane.jpg')
-},
+
 {
     nombre:'Mora',
     imagen:require('../../images/marcas/mora.png')
@@ -34,10 +31,6 @@ export const MarcasData = [
 {
     nombre:'Paula',
     imagen:require('../../images/marcas/paula.png')
-},
-{
-    nombre:'Plegaria',
-    imagen:require('../../images/marcas/plegaria.png')
 },
 {
     nombre:'Tascani',

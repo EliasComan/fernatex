@@ -32,7 +32,7 @@ const Home = () => {
       transition={{ duration: 1 }}
       viewport={{ once: true }}
       exit={{ opacity: 0 }}
-      className=" my-24  grid grid-rows-4 grid-cols-2 w-5/6 border rounded ">
+      className=" my-24  grid grid-rows-4 grid-cols-2 w-5/6 border w-screen overflow-x-hidden rounded ">
         <div className='flex flex-col items-center justify-center'>
           <h1 className='text-black text-3xl font-serif text-center'>Aprende mas acerca<hr></hr> de <strong><Link to={'/nosotros'}>nosotros.</Link></strong></h1>
           <h2 className='text-center text-black'>Haciendo click <strong><Link to={'/nosotros'}>aqui.</Link></strong></h2>

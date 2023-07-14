@@ -9,7 +9,7 @@ import { motion } from 'framer-motion'
 
 const Nosotros = () => {
   return (
-    <div>
+    <div >
         <div className='banner w-full h-72 flex items-center justify-center'>
            <h1 className='text-7xl text-white'>Nosotros</h1>
         </div>
@@ -17,7 +17,8 @@ const Nosotros = () => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
-            exit={{ opacity: 0 }} layout className='flex flex-col w-full items-center justify-center'>
+            exit={{ opacity: 0 }} layout 
+            className='flex flex-col w-full items-center justify-center'>
             <div className='flex my-24'>
                 <div className=' mt-20'>
                 <motion.img layout initial={{opacity:0}}whileInView={{opacity:1}} transition={{duration:2}} viewport={{once:true}}   className='w-96 h-auto' src={imgEdificio} alt="" />

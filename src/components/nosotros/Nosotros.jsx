@@ -19,7 +19,7 @@ const Nosotros = () => {
             viewport={{ once: true }}
             exit={{ opacity: 0 }} layout 
             className='flex flex-col w-full items-center justify-center'>
-            <div className='flex my-24'>
+            <div className='flex my-24 flex flex-col-reverse md:flex-row'>
                 <div className=' mt-20'>
                 <motion.img layout initial={{opacity:0}}whileInView={{opacity:1}} transition={{duration:2}} viewport={{once:true}}   className='w-96 h-auto' src={imgEdificio} alt="" />
                 <motion.img layout initial={{opacity:0}}whileInView={{opacity:1}} transition={{duration:2}} viewport={{once:true}}  className='w-96   h-auto mt-4' src={imgFabrica} alt=''/>
@@ -42,8 +42,8 @@ const Nosotros = () => {
          transition={{ duration: 1 }}
          viewport={{ once: true }}
          exit={{ opacity: 0 }}
-         className='flex flex-col w-full items-center justify-center'>
-            <div className='flex my-24'>
+         className='flex  flex-col w-full items-center justify-center'>
+            <div className='flex flex-col md:flex-row my-24'>
                 <div className='flex flex-col justify-center '>
                     <h1 className='text-4xl font-bold font-sans mx-12 text-black'>Nuestra historia</h1>
                     <div className='bg-primary h-0.5 w-48 mx-12'></div>

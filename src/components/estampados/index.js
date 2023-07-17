@@ -64,7 +64,7 @@ const Estampados = () => {
           transition={{
             layout: { duration: 0.1 },
           }}
-          className=" grid grid-cols-4 py-12 mx-12"
+          className=" grid grid-cols-2 md:grid-cols-4 py-12 mx-12"
         >
           {data}
         </motion.div>

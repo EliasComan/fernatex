@@ -11,9 +11,9 @@ const render = MarcasData.map((item, index )=> (
 )
   )
     return (
-    <div className='flex items-center flex-col border-t border-dotted w-screen  '>
+    <div className='flex items-center flex-col border-t border-dotted w-screen   '>
         <div className='flex flex-col items-center justify-center'>
-            <h1 className='text-3xl font-semibold text-black'>Marcas con las que trabajamos</h1>
+            <h1 className='text-3xl font-semibold text-black text-center '>Marcas con las que trabajamos</h1>
             <div className="bg-primary/80 left-0 shadow-2xl shadow-secondary/50 hidden md:block md:w-96 h-0.5 mt-2"></div>
         </div>
         <div className='grid grid-cols-3 md:grid-cols-12 content-center my-12'>

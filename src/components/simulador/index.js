@@ -160,11 +160,11 @@ const Simulador = () => {
   return (
     <div> 
       <div className="flex flex-col items-center justify-center my-12 text-black ">
-        <h1 className="text-black text-7xl font-serif my-4">Simulador interactivo</h1>
+        <h1 className="text-black text-7xl font-serif my-4 text-center">Simulador interactivo</h1>
         <h2><strong>Paso 1.</strong></h2>
         <p>Elija un diseño que mas le guste</p>
         <h2><strong>Paso 2.</strong></h2>
-        <p>Elija un color de fondo, de relleno y bordes</p>
+        <p>Elija un color de fondo y de relleno</p>
         <h2><strong>Paso 3.</strong></h2>
         <p>Repita cuantas veces quiera</p>
         
@@ -220,12 +220,12 @@ const Simulador = () => {
         
       </div>
       
-      <div className=" w-screen m-10">
-        <div className=" flex justify-around items-center ">
+      <div className=" w-screen my-10 md:mx-10">
+        <div className=" flex flex-col md:flex-row justify-around items-center ">
           <Suspense fallback={<div>Cargando</div>}>
             {EstampadoImport && (
               <EstampadoImport
-                className={`h-screen border-lg shadow-lg ${BgColor} border rounded-xl`}
+                className={`md:h-screen w-screen md:w-auto border-lg shadow-lg ${BgColor} border rounded-xl`}
                 stroke={color}
                 fill={fill}
                 
@@ -233,12 +233,12 @@ const Simulador = () => {
             )}
           </Suspense>
 
-          <div className="border-2   rounded-xl border-spacing-6  max-h-screen overflow-y-auto   bg-gray-100 p-8">
+          <div className="border-2  rounded-xl border-spacing-6   md:max-h-screen overflow-y-auto   bg-gray-100 p-8">
             <div className="">
               <div>
                 <h2 className="text-3xl text-center text-black">Color de fondo</h2>
               </div>
-              <div className="grid grid-cols-8 border shadow-xl rounded-lg p-8 m-4 bg-gray-200">
+              <div className="grid grid-cols-8 border shadow-xl rounded-lg md:p-8 my-4 md:mx-4 bg-gray-200">
                 {bgColors.map((i, index) => {
                   return (
                     <div
@@ -255,7 +255,7 @@ const Simulador = () => {
                 <div>
                   <h2 className="text-3xl text-center  text-black">Color de relleno</h2>
                 </div>
-                <div className="grid grid-cols-8 border shadow-xl bg-gray-200 rounded-lg p-8 m-4">
+                <div className="grid grid-cols-8 border shadow-xl bg-gray-200 rounded-lg my-4 md:p-8 md:mx-4">
                   {fillStrokeColors.map((i, index) => {
                     return (
                       <div

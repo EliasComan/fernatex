@@ -35,8 +35,8 @@ const EstampadosDetail = () => {
   }, [name,image]);
 
   return (
-    <div className="">
-      <div className="flex justify-around mt-12 mb-2 border-2 py-8 px-2 rounded-xl mx-12 w-11/12">
+    <div className="w-screen">
+      <div className="flex justify-around flex-col md:flex-row mt-12 mb-2 md:border-2 py-8 md:px-2 rounded-xl md:mx-12 md:w-11/12">
         {image && (
           <Suspense
             fallback={
@@ -53,7 +53,7 @@ const EstampadosDetail = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className={`h-screen border shadow-xl rounded-xl `}
+          className={`md:h-screen w-screen md:w-auto md:border shadow-xl rounded-xl `}
           src={image.svg}
           alt="svg"
         />
@@ -61,12 +61,12 @@ const EstampadosDetail = () => {
           
           </Suspense>
         )}
-        <div className="flex flex-col items-center justify-around w-2/6 h-screen ">
-          <div className="flex flex-col items-center justify-center  text-center h-2/6  text-black">
-              <h2 className="text-4xl ">Podes consultar por este diseño y muchas mas  en nuestra seccion de <strong><Link to={'/contacto'}>contacto</Link></strong> <hr></hr></h2>
+        <div className="flex flex-col items-center justify-around md:w-1/4 h-screen ">
+          <div className="flex flex-col items-center w-screen md:w-3/4 justify-center px-10 md:px-0 text-center h-2/6  text-black">
+              <h2 className="text-4xl text-center  ">Podes consultar por este diseño y muchas mas  en nuestra seccion de <strong><Link to={'/contacto'}>contacto</Link></strong> <hr></hr></h2>
           </div>
           <div clasName="text-center  flex text-black flex-col items-center border h-2/6 border-t-2 justify-center">
-              <h2 className="text-4xl text-center text-black">¿Te gustaria ver este diseño en otros colores? podes verlo en nuestro <strong><Link to={'/simulador/11047Aviones01'}>simulador. <hr></hr></Link></strong></h2>
+              <h2 className="text-4xl text-center w-screen md:w-3/4 text-black">¿Te gustaria ver este diseño en otros colores? podes verlo en nuestro <strong><Link to={'/simulador/11047Aviones01'}>simulador. <hr></hr></Link></strong></h2>
           </div>
         </div>
        
@@ -77,9 +77,9 @@ const EstampadosDetail = () => {
     
     
     
-      <section className="bg-gray-100 border rounded-xl mx-6 my-20">
+      <section className="bg-gray-100 border w-screen rounded-xl  my-20">
         <div className="mt-12 px-4 mb-2">
-          <h2 className="text-2xl text-black font-semibold  border-b">Esto  tambien podria gustarte</h2>
+          <h2 className="text-2-xl md:text-4xl text-black font-semibold  border-b">Esto  tambien podria gustarte</h2>
         </div>
         <div
           className="flex  gap-5 mb-12 snap-mandatory overflow-x-auto max-w-screen p-4 mx-4 bg-white

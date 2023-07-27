@@ -8,14 +8,14 @@ import Home from "./components/home/Home";
 import Navbar from "./components/navbar/Navbar";
 import Nosotros from "./components/nosotros/Nosotros";
 import Simulador from "./components/simulador";
-
+import { Toaster } from "react-hot-toast";
 function App() {
   const Images = () => (<h1>images</h1>)
 
   
 
   return (
-    <div className= "font[-apple-system]">
+    <div className= "">
       <Navbar/>
         <Routes>
           <Route  path="/" element={<Home/>}/>
@@ -27,6 +27,9 @@ function App() {
           <Route path="/simulador/:estampado" element={<Simulador/>}/>
         </Routes>
         <Footer/>
+        <Toaster
+      position="top-right"
+      />
     </div>
   );
 }

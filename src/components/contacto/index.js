@@ -1,7 +1,47 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-
+import { toast } from 'react-hot-toast'
+import axios from 'axios'
 const Contacto = () => {
+  const [nombre, setNombre] = useState()
+  const [telefono, setTelefono] = useState()
+  const [email, setEmail] = useState()
+  const [coment, setComent] = useState() 
+
+  const sendDataUser = () => {
+    console.log(nombre, telefono,email,coment)
+    axios.post('http://localhost:8080' ,
+    
+    
+    {
+      nombre: nombre,
+      telefono: telefono,
+      email:email,
+      coment: coment
+    },{
+      headers:{
+        'Content-Type':'application/json'
+      }
+    }
+    )
+    .then((res) => {
+      toast.success('Hecho!')
+      console.log(res)
+      setNombre('')
+      setTelefono('')
+      setEmail('')
+      setComent('')
+
+    })
+    .catch((error) => {
+      toast.error('Ha ocurrido un error')
+      console.log(error)
+    })
+
+
+  }
+
+
   return (
     <div className='flex itemas-center justify-center mt-12 '>
       <div className=''>
@@ -21,25 +61,34 @@ const Contacto = () => {
              <div className='flex md:w-full flex-col md:flex-row justify-center md:justify-around items-center'>
                 <div className='flex flex-col items-start justify-center'>
                   <label className='text-black text-md'>Nombre completo.</label>
-                  <input type='text'  className='w-72 border rounded-md shadow-md'/>
+                  <input type='text' name='Nombre'  onChange={e => {setNombre(e.target.value)}}  className='w-72 border rounded-md shadow-md'/>
                 </div>
                 <div className='flex flex-col items-start justify-center'>
                   <label className='text-black text-md '>Email.</label>
-                  <input type='text'  className='w-72 border rounded-md shadow-md'/>
+                  <input type='text' nombre='Email' onChange={e => {setEmail(e.target.value)}}  className='w-72 border rounded-md shadow-md'/>
                 </div>
             </div>
 
               <div className='flex flex-col items-start md:w-full  justify-center md:px-20 '>
                 <label className='text-black text-md'>Numero de telefono.</label>
-                <input type='text'  className='w-72 md:w-content md:px-24  border  rounded-md shadow-md'/>
+                <input type='text'  name='telefono'  onChange={e => {setTelefono(e.target.value)}} className='w-72 md:w-content md:px-24  border  rounded-md shadow-md'/>
               </div>
               <div className='flex flex-col items-start justify-center md:w-full md:justify-start md:px-20'>
                 <label className='text-black'>Deje un comentario</label>
-                <textarea className='border rounded-xl w-72 md:w-full h-24 px-24 shadow-md'></textarea>
+                <textarea  name='coment'  onChange={e => {setComent(e.target.value)}} className='border rounded-xl w-72 md:w-full h-24 px-24 shadow-md'></textarea>
               </div>
               <div className='w-screen md:w-full flex items-center justify-center'>
 
-              <motion.button whileHover={{scale:1.2}} onHoverStart={e => {}} onHoverEnd={e => {}}   whileTap={{ scale: 0.9 }} className='w-2/4 my-8 md:my-0 md:w-72 bg-primary h-12 border rounded-xl text-white shadow-md' type='button' >Enviar</motion.button>
+              <motion.button whileHover={{scale:1.2}}
+               onHoverStart={e => {}}
+                onHoverEnd={e => {}}  
+                 whileTap={{ scale: 0.9 }}
+                  className='w-2/4 my-8 md:my-0 md:w-72 bg-primary h-12 border rounded-xl text-white shadow-md' 
+                  type='button' 
+                  onClick={() => sendDataUser() }
+                  >Enviar
+                  
+                  </motion.button>
             </div>
 
 

@@ -10,9 +10,10 @@ import { motion } from 'framer-motion'
 const Nosotros = () => {
   return (
     <div >
-        <div className='banner w-screen h-72 flex items-center justify-center'>
+        <div className='banner w-screen h-96  flex items-center justify-center'>
            <h1 className='text-7xl text-white'>Nosotros</h1>
         </div>
+
         <motion.div initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}

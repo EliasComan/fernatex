@@ -10,7 +10,7 @@ const Contacto = () => {
 
   const sendDataUser = () => {
     console.log(nombre, telefono,email,coment)
-    axios.post('http://localhost:8080' ,
+    axios.post('https://fernatex-back.vercel.app/' ,
     
     
     {

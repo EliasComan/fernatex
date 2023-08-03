@@ -9,6 +9,7 @@ import imageNosotros from '../../images/PERSONAL FABRICA 1 cambio.jpg'
 import imageSimulador from '../../images/IMG_3118.jpg'
 import svgMarca from '../../images/logo/Logo Fernatex (completo).svg'
 import { motion } from 'framer-motion'
+import Galeria from './galeria'
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
             
         </div>
       </div>
+      <Galeria/>
       <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}

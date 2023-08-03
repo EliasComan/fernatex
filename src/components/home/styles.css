@@ -1,19 +1,6 @@
-.card{
 
-    background: url('https://fernatex.herokuapp.com/images/fotosfabrica/deMaquinaria2.jpg');
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.card:hover{
-    background:linear-gradient( to left bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0) 100%), url('https://fernatex.herokuapp.com/images/fotosfabrica/deMaquinaria2.jpg') !important;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    color: white;
-}
 .bannerInicio{
-    background:linear-gradient(to left bottom, rgba(0, 0, 0, 0.2) 0%, rgb(0, 0, 0) 100%), url('../../images/IMG_3118.jpg');
+    background:linear-gradient(to left bottom, rgba(0, 0, 0, 0.2) 0%, rgb(0, 0, 0) 100%), url('../../images/PORTADA\ DE\ INICIO.jpeg');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;

@@ -1,4 +1,4 @@
-import '../nosotros/styles.css'
+import './styles.css'
 
 import React, { Suspense, useEffect, useState } from "react";
 
@@ -53,7 +53,7 @@ const Estampados = () => {
   };
   return (
     <div>
-       <div className='banner w-full h-72 flex items-center justify-center'>
+       <div className='bannerEstampados w-full h-96 flex items-center justify-center'>
            <h1 className='text-6xl text-white'>Nuestros estampados</h1>
         </div>
 

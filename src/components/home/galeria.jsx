@@ -17,9 +17,9 @@ import image15 from '../../images/INICIO/3.Comunicate con nuestra Seccion/Diseñ
 import image16 from '../../images/INICIO/3.Comunicate con nuestra Seccion/Diseño y produccion 1.jpg'
 
 
-const Galeria = () => {
-
-    return<div className='grid grid-cols-2 md:grid-cols-4 gap-4 bg-gray-100 m-16 '>
+const Galeria = ({ images }) => {
+ 
+    return<div className='grid grid-cols-2 md:grid-cols-4 gap-4 bg-gray-100 m-16  '>
         <div className='grid gap-4'>
 
             <div>
@@ -28,13 +28,9 @@ const Galeria = () => {
             <div>
             <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{scale:1.4}}  viewport={{ once: true }}src={image3} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
             </div>
-            <div className='flex flex-col items-center justify-center h-72 w-full'>
-          <h1 className='text-black text-xl md:text-3xl font-serif text-center'>Aprende mas acerca<hr></hr> de <strong><Link to={'/nosotros'}>nosotros.</Link></strong></h1>
-          <h2 className='text-center text-black italic'>Haciendo click <strong><Link to={'/nosotros'}>aqui.</Link></strong></h2>
-        </div>
-            <div>
+           <div>
                 <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }} whileHover={{scale:1.4}}  src={image4} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow hover:scale' />
-            </div>
+                </div>
             <div>
             <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }} whileHover={{scale:1.4}} src={image5} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
             </div>
@@ -50,19 +46,13 @@ const Galeria = () => {
             <div>
             <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{scale:1.4}} viewport={{ once: true }} src={image8} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
             </div>
-            <div className='flex flex-col items-center h-72 justify-center'>
-        <h1 className='text-black text-xl md:text-3xl font-serif text-center'>Mira nuestra galeria<hr></hr> de <strong><Link to={'/estampados'}>estampados.</Link></strong></h1>
-          <h2 className='text-center text-black italic'>Haciendo click <strong><Link to={'/estampados'}>aqui.</Link></strong></h2>
-        </div>
+           
             <div>
             <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{scale:1.4}} viewport={{ once: true }} src={image9} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
             </div>
         </div>
         <div className='grid gap-4'>
-        <div className='flex flex-col items-center justify-center h-72 '>
-        <h1 className='text-black text-xl md:text-3xl font-serif text-center'>Comunicate con nosotros<hr></hr> en nuestra seccion de <strong><Link to={'/contacto'}>contacto.</Link></strong></h1>
-          <h2 className='text-center text-black italic'>Haciendo click <strong><Link to={'/contacto'}>aqui.</Link></strong></h2>
-       </div>
+        
             <div>
                 <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }} whileHover={{scale:1.4}} src={image10} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
             </div>
@@ -82,11 +72,7 @@ const Galeria = () => {
         <div>
                 <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }} whileHover={{scale:1.4}} src={image14} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
             </div>
-            <div className='flex h-72 flex-col items-center justify-center '>
-       <h1 className='text-black text-xl md:text-3xl font-serif text-center'>Pone a prueba nuestros diseños<hr></hr> en nuestro  <strong><Link to={'/simulador/11047Aviones01'}>simulador.</Link></strong></h1>
-          <h2 className='text-center text-black italic'>Haciendo click <strong><Link to={'/simulador/11047Aviones01'}>aqui.</Link></strong></h2>
         
-        </div>
             <div>
                 <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }} whileHover={{scale:1.4}} src={image15} alt="" srcset="" className='h-auto w-full  max-w-full rounded-xl shadow' />
             </div>
@@ -94,7 +80,7 @@ const Galeria = () => {
                 <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }} whileHover={{scale:1.4}} src={image16} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
             </div>
             <div>
-            </div>
+        </div>
            
 
 

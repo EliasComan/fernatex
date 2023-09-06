@@ -9,6 +9,9 @@ import Navbar from "./components/navbar/Navbar";
 import Nosotros from "./components/nosotros/Nosotros";
 import Simulador from "./components/simulador";
 import { Toaster } from "react-hot-toast";
+import NosotrosGaleria from "./components/nosotros/NosotrosGaleria";
+import EstampadosImagenes from "./components/estampados/EstampadosImagenes"
+import ContactoImagenes from "./components/contacto/ContactoImagenes";
 function App() {
   const Images = () => (<h1>images</h1>)
 
@@ -21,8 +24,11 @@ function App() {
           <Route  path="/" element={<Home/>}/>
           <Route path="/images" element={<Images/>}/>
           <Route path='/nosotros' element ={<Nosotros/>}/>
+          <Route path="/nosotros/galeria" element={<NosotrosGaleria/>} />
           <Route path='/estampados' element={<Estampados/>}/>
+          <Route path='estampados/imagenes' element={<EstampadosImagenes/>} />
           <Route path='/contacto' element={<Contacto/>}/>
+          <Route path='/contacto/imagenes' element={<ContactoImagenes/>} />
           <Route path='/estampados/:name' element={<EstampadosDetail/>}/>
           <Route path="/simulador/:estampado" element={<Simulador/>}/>
         </Routes>

@@ -38,7 +38,7 @@ const Home = () => {
         <div className='flex flex-col items-center justify-center'>
           <h1 className='text-black text-xl md:text-3xl font-serif text-center'>Conoce nuestro  <strong><Link to={'/nosotros'}>Staff.</Link></strong> <hr></hr></h1>
           
-          <h2 className='text-center text-black italic'>Haciendo click <strong><Link to={'/nosotros'}>aqui.</Link></strong></h2>
+          <h2 className='text-center text-black italic'>Haciendo click <strong><Link to={'/nosotros/galeria'}>aqui.</Link></strong></h2>
         </div>
         <div>
           <Link to={'/nosotros/galeria'}><img src={imageNosotros} className='w-full h-auto' alt="Imagen nostros" /></Link>
@@ -47,12 +47,12 @@ const Home = () => {
          <Link to={'/estampados/imagenes'}> <img src={imageEstampados} className='w-full h-auto' alt="Imagen Estampados" /></Link>
         </div>
         <div className='flex flex-col items-center justify-center'>
-        <h1 className='text-black text-xl md:text-3xl font-serif text-center'>Conoce nuestra manera<hr></hr> de <strong><Link to={'/estampados'}>trabajar.</Link></strong></h1>
-          <h2 className='text-center text-black italic'>Haciendo click <strong><Link to={'/estampados'}>aqui.</Link></strong></h2>
+        <h1 className='text-black text-xl md:text-3xl font-serif text-center'>Conoce nuestra manera<hr></hr> de <strong><Link to={'/estampados/imagenes'}>trabajar.</Link></strong></h1>
+          <h2 className='text-center text-black italic'>Haciendo click <strong><Link to={'/estampados/imagenes'}>aqui.</Link></strong></h2>
         </div>
         <div className='flex flex-col items-center justify-center '>
-        <h1 className='text-black text-xl md:text-3xl font-serif text-center'>Comunicate nuestra seccion<hr></hr>  de <strong><Link to={'/contacto'}>contacto.</Link></strong></h1>
-          <h2 className='text-center text-black italic'>Haciendo click <strong><Link to={'/contacto'}>aqui.</Link></strong></h2>
+        <h1 className='text-black text-xl md:text-3xl font-serif text-center'>Comunicate nuestra seccion<hr></hr>  de <strong><Link to={'/contacto/imagenes'}>contacto.</Link></strong></h1>
+          <h2 className='text-center text-black italic'>Haciendo click <strong><Link to={'/contacto/imagenes'}>aqui.</Link></strong></h2>
        </div>
        <div>
        <Link to={'/contacto/imagenes'}> <img src={imageContacto}  className='w-full h-auto mt-24'alt="Imagen Contacto" /></Link>

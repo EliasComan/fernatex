@@ -10,7 +10,7 @@ const Contacto = () => {
 
   const sendDataUser = () => {
     console.log(nombre, telefono,email,coment)
-    axios.post('https://fernatex-back.vercel.app/' ,
+    axios.post('http://localhost:8080/' ,
     
     
     {
@@ -61,21 +61,23 @@ const Contacto = () => {
              <div className='flex md:w-full flex-col md:flex-row justify-center md:justify-around items-center'>
                 <div className='flex flex-col items-start justify-center'>
                   <label className='text-black text-md'>Nombre completo.</label>
-                  <input type='text' name='Nombre'  onChange={e => {setNombre(e.target.value)}}  className='w-72 border rounded-md shadow-md'/>
+                  <input type='text' name='Nombre'  onChange={e => {setNombre(e.target.value)}}  className='w-72 border text-black rounded-md shadow-md'/>
                 </div>
                 <div className='flex flex-col items-start justify-center'>
                   <label className='text-black text-md '>Email.</label>
-                  <input type='text' nombre='Email' onChange={e => {setEmail(e.target.value)}}  className='w-72 border rounded-md shadow-md'/>
+                  <input type='text' nombre='Email' onChange={e => {setEmail(e.target.value)}}  className='w-72 border text-black rounded-md shadow-md'/>
                 </div>
             </div>
 
               <div className='flex flex-col items-start md:w-full  justify-center md:px-20 '>
                 <label className='text-black text-md'>Numero de telefono.</label>
-                <input type='text'  name='telefono'  onChange={e => {setTelefono(e.target.value)}} className='w-72 md:w-content md:px-24  border  rounded-md shadow-md'/>
+                <input type='text'  name='telefono'  onChange={e => {setTelefono(e.target.value)}} className='w-72 md:w-content md:px-24 text-black
+                +
+                g border  rounded-md shadow-md'/>
               </div>
               <div className='flex flex-col items-start justify-center md:w-full md:justify-start md:px-20'>
                 <label className='text-black'>Deje un comentario</label>
-                <textarea  name='coment'  onChange={e => {setComent(e.target.value)}} className='border rounded-xl w-72 md:w-full h-24 px-24 shadow-md'></textarea>
+                <textarea  name='coment'  onChange={e => {setComent(e.target.value)}} className='border text-black rounded-xl w-72 md:w-full h-24 px-24 shadow-md'></textarea>
               </div>
               <div className='w-screen md:w-full flex items-center justify-center'>
 

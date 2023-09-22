@@ -36,7 +36,7 @@ const Home = () => {
       exit={{ opacity: 0 }}
       className=" my-24  grid grid-rows-4 grid-cols-2 w-5/6 border w-screen overflow-x-hidden rounded ">
         <div className='flex flex-col items-center justify-center'>
-          <h1 className='text-black text-xl md:text-3xl font-serif text-center'>Conoce nuestro  <strong><Link to={'/nosotros'}>Staff.</Link></strong> <hr></hr></h1>
+          <h1 className='text-black text-xl md:text-3xl font-serif text-center'>Conoce nuestro  <strong><Link to={'/nosotros/galeria'}>Staff.</Link></strong> <hr></hr></h1>
           
           <h2 className='text-center text-black italic'>Haciendo click <strong><Link to={'/nosotros/galeria'}>aqui.</Link></strong></h2>
         </div>
@@ -51,7 +51,7 @@ const Home = () => {
           <h2 className='text-center text-black italic'>Haciendo click <strong><Link to={'/estampados/imagenes'}>aqui.</Link></strong></h2>
         </div>
         <div className='flex flex-col items-center justify-center '>
-        <h1 className='text-black text-xl md:text-3xl font-serif text-center'>Comunicate nuestra seccion<hr></hr>  de <strong><Link to={'/contacto/imagenes'}>contacto.</Link></strong></h1>
+        <h1 className='text-black text-xl md:text-3xl font-serif text-center'>Comunicate nuestra seccion<hr></hr>  de <strong><Link to={'/contacto/imagenesg'}>contacto.</Link></strong></h1>
           <h2 className='text-center text-black italic'>Haciendo click <strong><Link to={'/contacto/imagenes'}>aqui.</Link></strong></h2>
        </div>
        <div>

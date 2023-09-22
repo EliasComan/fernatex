@@ -1,14 +1,16 @@
 import './styles.css'
 
 import React from 'react'
-import adminyventas from '../../images/ADMINISTRACION Y VENTAS 1.jpg'
-import image1 from '../../images/IMG_3087 (1).jpg'
-import image2 from '../../images/IMG_3049.jpg'
-import image4 from '../../images/FOTOS DE NUESTRA HISTORIA (NOSOTROS)/1 foto nuestra historia.jpg'
-import image5 from '../../images/FOTOS DE NUESTRA HISTORIA (NOSOTROS)/2 WhatsApp Image 2023-07-27 at 14.53.00 (1).jpg'
-import image6 from '../../images/FOTOS DE NUESTRA HISTORIA (NOSOTROS)/3 WhatsApp Image 2023-07-27 at 14.53.00.jpg'
-import imgPersonal from '../../images/PERSONAL FABRICA 1 cambio.jpg'
-import image7 from '../../images/FOTOS DE NUESTRA HISTORIA (NOSOTROS)/FotosFernatexNosotros/image2.jpg'
+import image1 from '../../images/FOTOS DE NUESTRA HISTORIA (NOSOTROS)/1 foto nuestra historia.jpg'
+import image2 from '../../images/FOTOS DE NUESTRA HISTORIA (NOSOTROS)/2 WhatsApp Image 2023-07-27 at 14.53.00 (1).jpg'
+import image3 from '../../images/FOTOS DE NUESTRA HISTORIA (NOSOTROS)/3 WhatsApp Image 2023-07-27 at 14.53.00.jpg'
+import image4 from '../../images/FOTOS DE NUESTRA HISTORIA (NOSOTROS)/FotosFernatexNosotros/image2.jpg'
+import image5 from '../../images/FOTOS DE NUESTRA HISTORIA (NOSOTROS)/WhatsApp Image 2023-09-21 at 23.34.05.jpeg'
+import image6 from '../../images/FOTOS DE NUESTRA HISTORIA (NOSOTROS)/WhatsApp Image 2023-09-21 at 23.34.12.jpeg'
+import image7 from '../../images/FOTOS DE NUESTRA HISTORIA (NOSOTROS)/WhatsApp Image 2023-09-21 at 23.34.15.jpeg'
+import image8 from '../../images/FOTOS DE NUESTRA HISTORIA (NOSOTROS)/WhatsApp Image 2023-09-21 at 23.34.19.jpeg'
+import image9 from '../../images/FOTOS DE NUESTRA HISTORIA (NOSOTROS)/WhatsApp Image 2023-09-21 at 23.34.22.jpeg'
+
 import { motion } from 'framer-motion'
 
 
@@ -38,22 +40,26 @@ const Nosotros = () => {
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-4 bg-gray-100 m-16 w-screen w-4/5 '>
                     <div className='grid gap-4  '>
                         <div>
-                            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{scale:1.4}} viewport={{ once: true }}src={adminyventas} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
-                        </div>
-                        <div>
-                            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{scale:1.4}} viewport={{ once: true }}src={image1} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
+                            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{scale:1.4}} viewport={{ once: true }}src={image6} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
                         </div>
                         <div>
                             <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{scale:1.4}} viewport={{ once: true }}src={image7} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
                         </div>
+                        <div>
+                            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{scale:1.4}} viewport={{ once: true }}src={image8} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
+                        </div>
                     </div>    
                     <div className='grid gap-4  '>    
                         <div>
-                            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{scale:1.4}} viewport={{ once: true }}src={imgPersonal} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
+                            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{scale:1.4}} viewport={{ once: true }}src={image4} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
                         </div>
                         <div>
-                            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{scale:1.4}} viewport={{ once: true }}src={image1} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
+                            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{scale:1.4}} viewport={{ once: true }}src={image9} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
                         </div>
+                        <div>
+                            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{scale:1.4}} viewport={{ once: true }}src={image5} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
+                        </div>
+                        
                     </div>
                     
 
@@ -76,20 +82,15 @@ const Nosotros = () => {
             <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{scale:1.4}} viewport={{ once: true }}src={image1} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
             </div>
             <div>
-            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{scale:1.4}}  viewport={{ once: true }}src={image5} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
+            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{scale:1.4}}  viewport={{ once: true }}src={image3} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
             </div>
          </div>
          <div className='grid gap-4'>  
-           <div>
-
-                <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }} whileHover={{scale:1.4}}  src={image4} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow hover:scale' />
-                </div>
+           
             <div>
             <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }} whileHover={{scale:1.4}} src={image2} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
             </div>
-            <div>
-            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }} whileHover={{scale:1.4}} src={image6} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
-            </div>
+           
             
         </div>
         </div>

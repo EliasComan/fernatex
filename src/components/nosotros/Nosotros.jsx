@@ -46,22 +46,20 @@ const Nosotros = () => {
                             <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{scale:1.4}} viewport={{ once: true }}src={image7} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
                         </div>
                         <div>
-                            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{scale:1.4}} viewport={{ once: true }}src={image8} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
+                            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{scale:1.4}} viewport={{ once: true }}src={image4} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
                         </div>
-                    </div>    
+                        
+                    </div>
                     <div className='grid gap-4  '>    
                         <div>
-                            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{scale:1.4}} viewport={{ once: true }}src={image4} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
+                            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{scale:1.4}} viewport={{ once: true }}src={image8} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
                         </div>
                         <div>
                             <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{scale:1.4}} viewport={{ once: true }}src={image9} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
                         </div>
-                        <div>
-                            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{scale:1.4}} viewport={{ once: true }}src={image5} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
-                        </div>
                         
-                    </div>
                     
+                    </div>    
 
                 </div>
             </div>
@@ -90,6 +88,9 @@ const Nosotros = () => {
             <div>
             <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }} whileHover={{scale:1.4}} src={image2} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
             </div>
+            <div>
+                            <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{scale:1.4}} viewport={{ once: true }}src={image5} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
+                        </div>
            
             
         </div>

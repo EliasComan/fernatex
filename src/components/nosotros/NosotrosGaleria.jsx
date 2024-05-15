@@ -9,7 +9,7 @@ const NosotrosGaleria = () => {
     
     
     return (
-        <div className='grid grid-cols-1 md:grid-cols-4 gap-4 bg-gray-100 m-16  '>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-4 bg-gray-100 m-16  '>
             <div className='grid gap-4'>
                 <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{scale:1.4}} viewport={{ once: true }}src={image1} alt="" srcset="" className='h-auto w-full max-w-full rounded-xl shadow' />
             </div>
